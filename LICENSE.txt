@@ -1,0 +1,102 @@
+﻿Gampi – Gamma Presets Instant
+Copyright (c) 2026 Wussa. Alle Rechte vorbehalten. / All rights reserved.
+
+English version below.
+
+============================================================
+NUTZUNGSBEDINGUNGEN (FREEWARE)
+============================================================
+
+1. Nutzung
+   Gampi darf kostenlos genutzt werden, privat wie beruflich, auf beliebig
+   vielen eigenen Rechnern.
+
+2. Weitergabe
+   Die Programmdateien (Installer und portable Version) dürfen nur
+   unverändert, vollständig und kostenlos weitergegeben werden. Der Verkauf,
+   die Vermietung oder die Weitergabe gegen Entgelt sowie das Bündeln mit
+   anderen Produkten sind ohne vorherige schriftliche Zustimmung nicht
+   erlaubt. Für Downloads wird auf die offizielle Website verwiesen.
+
+3. Einschränkungen
+   Es ist nicht erlaubt, das Programm zu verändern, zu dekompilieren,
+   zurückzuentwickeln (Reverse Engineering) oder Teile davon in eigene
+   Produkte zu übernehmen, soweit dies nicht gesetzlich ausdrücklich
+   erlaubt ist.
+
+4. Spenden
+   Spenden sind freiwillig. Sie begründen keinen Anspruch auf Support,
+   Updates, bestimmte Funktionen oder eine weitere Bereitstellung.
+
+5. Keine Gewährleistung
+   Gampi wird unentgeltlich und „wie besehen“ bereitgestellt, ohne
+   Zusicherung bestimmter Eigenschaften oder der Eignung für einen
+   bestimmten Zweck. Gampi verändert Bildeinstellungen über Windows- und
+   Grafiktreiberfunktionen; die Nutzung erfolgt auf eigene Verantwortung.
+   Ob Bildeinstellungen in einem Spiel, Turnier oder auf einer Plattform
+   erlaubt sind, richtet sich nach deren Regeln und ist vom Nutzer selbst
+   zu prüfen.
+
+6. Haftung
+   Die Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt. Dies
+   gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder
+   der Gesundheit sowie für die Haftung nach dem Produkthaftungsgesetz.
+
+7. Marken
+   Genannte Namen von Spielen, Grafikkarten- und Softwareherstellern sind
+   Marken ihrer jeweiligen Inhaber. Gampi steht in keiner Verbindung zu
+   diesen Unternehmen.
+
+8. Recht
+   Es gilt das Recht der Bundesrepublik Deutschland. Zwingende
+   Verbraucherschutzvorschriften des Staates, in dem der Nutzer seinen
+   gewöhnlichen Aufenthalt hat, bleiben unberührt.
+
+
+============================================================
+TERMS OF USE (FREEWARE)
+============================================================
+
+In case of doubt, the German version above prevails.
+
+1. Use
+   Gampi may be used free of charge, privately and professionally, on any
+   number of your own computers.
+
+2. Distribution
+   The program files (installer and portable version) may only be passed on
+   unmodified, complete and free of charge. Selling, renting or passing them
+   on for a fee, as well as bundling them with other products, is not
+   permitted without prior written consent. For downloads, please refer to
+   the official website.
+
+3. Restrictions
+   You may not modify, decompile or reverse engineer the program, or use
+   parts of it in your own products, except where expressly permitted by law.
+
+4. Donations
+   Donations are voluntary. They do not create any entitlement to support,
+   updates, specific features or continued availability.
+
+5. No warranty
+   Gampi is provided free of charge and "as is", without any warranty of
+   specific properties or fitness for a particular purpose. Gampi changes
+   display settings through Windows and graphics driver functions; use it at
+   your own responsibility. Whether display settings are allowed in a game,
+   tournament or on a platform depends on their rules and is the user's own
+   responsibility to check.
+
+6. Liability
+   Liability is limited to intent and gross negligence. This does not apply
+   to damage resulting from injury to life, body or health, or to liability
+   under the German Product Liability Act.
+
+7. Trademarks
+   Names of games, graphics card and software manufacturers mentioned are
+   trademarks of their respective owners. Gampi is not affiliated with these
+   companies.
+
+8. Law
+   The laws of the Federal Republic of Germany apply. Mandatory consumer
+   protection provisions of the country in which the user has their habitual
+   residence remain unaffected.
