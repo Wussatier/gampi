@@ -53,8 +53,9 @@ by itself when the game starts.
   capture the effect, so Gampi creates comparison images and a `.cube` LUT.
 - **German and English** interface.
 
-**Not just for games.** The settings apply to everything your monitor shows –
-movies, streams, the browser or any other program.
+> [!TIP]
+> **Not just for games.** The settings apply to everything your monitor shows –
+> movies, streams, the browser or any other program.
 
 ## Getting started
 
@@ -137,8 +138,9 @@ Spielstart von selbst ein.
   `.cube`-LUT.
 - Oberfläche auf **Deutsch und Englisch**.
 
-**Nicht nur für Spiele.** Die Einstellungen gelten für alles, was dein Monitor
-zeigt – Filme, Streams, den Browser oder jedes andere Programm.
+> [!TIP]
+> **Nicht nur für Spiele.** Die Einstellungen gelten für alles, was dein Monitor
+> zeigt – Filme, Streams, den Browser oder jedes andere Programm.
 
 ### Loslegen
 
