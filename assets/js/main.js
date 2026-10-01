@@ -8,13 +8,6 @@
 
   i18n.init();
 
-  // Download-Links (immer das neueste GitHub-Release)
-  const base = `https://github.com/${config.github.user}/${config.github.repo}/releases/latest/download/`;
-  document.querySelectorAll("[data-download]").forEach(link => {
-    const file = config.downloads[link.dataset.download];
-    if (file) link.href = base + file;
-  });
-
   document.querySelectorAll("[data-version]").forEach(el => { el.textContent = config.version; });
   document.querySelectorAll("[data-year]").forEach(el => { el.textContent = new Date().getFullYear(); });
 

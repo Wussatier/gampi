@@ -65,6 +65,7 @@
     </a>
     <nav class="site-nav" aria-label="Hauptnavigation">
       <a href="#features"><span lang="de">Funktionen</span><span lang="en">Features</span></a>
+      <a href="#compare"><span lang="de">Vergleich</span><span lang="en">Compare</span></a>
       <a href="#how"><span lang="de">So geht's</span><span lang="en">How it works</span></a>
       <a href="#safe"><span lang="de">Sicherheit</span><span lang="en">Safety</span></a>
       <a href="#faq">FAQ</a>
@@ -89,8 +90,8 @@
         <span lang="en">See more in the dark.<br><span class="accent">Automatically per game.</span></span>
       </h1>
       <p class="hero__lead">
-        <span lang="de">Gampi hebt gezielt die dunkelsten Töne an – Schwarz bleibt schwarz, helle Bereiche bleiben unverändert. Presets pro Spiel, die sich beim Spielstart von selbst einschalten.</span>
-        <span lang="en">Gampi lifts exactly the darkest tones – black stays black, bright areas stay untouched. Presets per game that switch on by themselves when the game starts.</span>
+        <span lang="de">Gampi hebt gezielt die dunkelsten Töne an: Gegner im Schatten werden sichtbar, Farben kräftiger, Details klarer – ohne dass das Bild grau wird. Presets pro Spiel, die sich beim Spielstart von selbst einschalten.</span>
+        <span lang="en">Gampi lifts exactly the darkest tones: enemies in the shadows become visible, colors richer, details clearer – without washing out the picture. Presets per game that switch on by themselves when the game starts.</span>
       </p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="#download"><span lang="de">Kostenlos herunterladen</span><span lang="en">Download for free</span></a>
@@ -118,6 +119,26 @@
         <div class="carousel__dots" hidden></div>
         <figcaption class="carousel__caption" aria-live="polite"></figcaption>
       </figure>
+
+      <!-- Kernaussagen in Zahlen -->
+      <ul class="stats" role="list">
+        <li class="stats__item">
+          <strong class="stats__value">0</strong>
+          <span class="stats__label"><span lang="de">FPS Verlust</span><span lang="en">FPS lost</span></span>
+        </li>
+        <li class="stats__item">
+          <strong class="stats__value">0 ms</strong>
+          <span class="stats__label"><span lang="de">zusätzliche Latenz</span><span lang="en">added latency</span></span>
+        </li>
+        <li class="stats__item">
+          <strong class="stats__value">1</strong>
+          <span class="stats__label"><span lang="de">Tastendruck zum Wechseln</span><span lang="en">key press to switch</span></span>
+        </li>
+        <li class="stats__item">
+          <strong class="stats__value">0 €</strong>
+          <span class="stats__label"><span lang="de">kostenlos, ohne Konto</span><span lang="en">free, no account</span></span>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -126,41 +147,214 @@
     <div class="container">
       <h2 class="section__title" id="features-title"><span lang="de">Alles, was du brauchst</span><span lang="en">Everything you need</span></h2>
       <p class="section__lead">
-        <span lang="de">Ein moderner Ersatz für Gamma-Regler, die im Treiber fehlen oder bei jedem Spielstart neu gesetzt werden müssen.</span>
-        <span lang="en">A modern replacement for gamma sliders that are missing from your driver or need resetting every time you play.</span>
+        <span lang="de">Schluss mit Treiber-Menüs und Monitor-Tasten: einmal einstellen, danach läuft es von allein. Und wenn du etwas anpassen möchtest, ist das in Sekunden erledigt.</span>
+        <span lang="en">No more driver menus and monitor buttons: set it up once, then it just works. And when you want to tweak something, it takes seconds.</span>
       </p>
       <div class="grid">
         <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+          <h3><span lang="de">Kein FPS-Verlust, keine Latenz</span><span lang="en">No FPS loss, no latency</span></h3>
+          <p><span lang="de">Die Grafikkarte wendet die Einstellung direkt bei der Bildausgabe an. Kein Overlay, kein Filter, der jedes Bild nachbearbeitet.</span><span lang="en">The graphics card applies the setting right at display output. No overlay, no filter processing every frame.</span></p>
+        </article>
+        <article class="card">
           <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
           <h3><span lang="de">Automatisch pro Spiel</span><span lang="en">Automatic per game</span></h3>
-          <p><span lang="de">Startet das Spiel, wird dein Preset aktiv. Endet es, ist alles wieder normal.</span><span lang="en">Launch the game and your preset turns on. Quit it and everything goes back to normal.</span></p>
+          <p><span lang="de">Startet das Spiel, wird dein Preset aktiv – endet es, ist der Desktop wieder normal. Kein Umstellen im Treiber oder am Monitor.</span><span lang="en">Launch the game and your preset turns on – quit it and your desktop is back to normal. No changing settings in the driver or on the monitor.</span></p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M7 14h10"/></svg></div>
+          <h3><span lang="de">Wechsel per Hotkey</span><span lang="en">Switch by hotkey</span></h3>
+          <p><span lang="de">Tag, Nacht, Innenraum: ein Tastendruck mitten im Spiel genügt. Kein Alt+Tab, kein Menü.</span><span lang="en">Day, night, indoors: one key press mid-game is all it takes. No Alt+Tab, no menus.</span></p>
         </article>
         <article class="card">
           <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c3-9 7-12 16-16"/><circle cx="4" cy="20" r="1.5" fill="currentColor"/></svg></div>
           <h3><span lang="de">Schatten-Boost</span><span lang="en">Shadow boost</span></h3>
-          <p><span lang="de">Spreizt die dunkelsten Töne, damit sich Details vom dunklen Hintergrund abheben – ohne das Bild grau zu machen.</span><span lang="en">Spreads the darkest tones so details stand out from dark backgrounds – without turning the picture grey.</span></p>
+          <p><span lang="de">Hebt nur die dunkelsten Töne an, damit sich Details vom dunklen Hintergrund abheben. Schwarz bleibt schwarz, das Bild wird nicht grau.</span><span lang="en">Lifts only the darkest tones so details stand out from dark backgrounds. Black stays black, the picture doesn't turn grey.</span></p>
         </article>
         <article class="card">
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></div>
-          <h3><span lang="de">Gamma, Kontrast, Sättigung</span><span lang="en">Gamma, contrast, saturation</span></h3>
-          <p><span lang="de">Alles in einem Preset. Sättigung direkt über den AMD- oder NVIDIA-Treiber.</span><span lang="en">All in one preset. Saturation directly through the AMD or NVIDIA driver.</span></p>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
+          <h3><span lang="de">Endlich Gamma für AMD</span><span lang="en">Gamma for AMD, at last</span></h3>
+          <p><span lang="de">AMD Software hat keinen Gamma-Regler – Gampi schon. Dazu Sättigung über den AMD- oder NVIDIA-Treiber, alles im selben Preset.</span><span lang="en">AMD Software has no gamma slider – Gampi does. Plus saturation through the AMD or NVIDIA driver, all in the same preset.</span></p>
         </article>
         <article class="card">
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M7 14h10"/></svg></div>
-          <h3><span lang="de">Hotkeys &amp; Tray</span><span lang="en">Hotkeys &amp; tray</span></h3>
-          <p><span lang="de">Presets per Tastenkürzel mitten im Spiel wechseln oder über das Tray-Menü.</span><span lang="en">Switch presets mid-game with a hotkey or from the tray menu.</span></p>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11z"/></svg></div>
+          <h3><span lang="de">ICC-Profile für den Feinschliff</span><span lang="en">ICC profiles for fine-tuning</span></h3>
+          <p><span lang="de">Jedes Preset kann ein eigenes ICC-Farbprofil mitbringen. So verfeinerst du Farben und Tonwerte weit über Gamma und Kontrast hinaus.</span><span lang="en">Each preset can carry its own ICC color profile. Refine colors and tones far beyond gamma and contrast.</span></p>
         </article>
         <article class="card">
           <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <h3><span lang="de">Bleibt, wie eingestellt</span><span lang="en">Stays as you set it</span></h3>
-          <p><span lang="de">Setzen Vollbild-Wechsel oder Alt+Tab die Einstellung zurück, stellt Gampi sie sofort wieder her.</span><span lang="en">If fullscreen switches or Alt+Tab reset your settings, Gampi restores them right away.</span></p>
+          <p><span lang="de">Vollbild-Wechsel, Alt+Tab oder das Aufwachen des Monitors setzen die Einstellung oft zurück. Gampi merkt das und stellt sie sofort wieder her.</span><span lang="en">Fullscreen switches, Alt+Tab or the monitor waking up often reset the setting. Gampi notices and restores it right away.</span></p>
         </article>
         <article class="card">
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></div>
-          <h3><span lang="de">Für Creator</span><span lang="en">For creators</span></h3>
-          <p><span lang="de">Presets teilen, Vorher/Nachher-Bilder erzeugen und eine LUT für OBS &amp; Videoschnitt exportieren.</span><span lang="en">Share presets, create before/after images and export a LUT for OBS &amp; video editing.</span></p>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+          <h3><span lang="de">Übersichtlich sortiert</span><span lang="en">Neatly organized</span></h3>
+          <p><span lang="de">Pro Spiel ein Ordner, darin beliebig viele Presets – etwa Tag, Nacht und einzelne Karten. Alles an einem Ort statt verstreut in Treiber und Monitor.</span><span lang="en">One folder per game with as many presets as you like – day, night, individual maps. Everything in one place instead of scattered across driver and monitor.</span></p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.900 15.800 7.100M8.200 13.100l7.600 3.800"/></svg></div>
+          <h3><span lang="de">Presets teilen</span><span lang="en">Share presets</span></h3>
+          <p><span lang="de">Preset als Datei weitergeben, importieren per Drag &amp; Drop. Vorher/Nachher-Bilder und eine LUT für OBS zeigen anderen den Effekt, den Screenshots sonst nicht einfangen.</span><span lang="en">Pass a preset on as a file, import by drag &amp; drop. Before/after images and a LUT for OBS show others the effect that screenshots can't capture.</span></p>
         </article>
       </div>
+      <p class="callout">
+        <span lang="de"><strong>Nicht nur für Spiele.</strong> Gampi wirkt auf alles, was dein Monitor zeigt: Filme und Streams mit zu dunklen Szenen, ein blasses Bild beim Arbeiten oder ein eigener Look für jedes Programm. Statt eines Spiels legst du einfach eine beliebige Anwendung an – oder wechselst per Hotkey.</span>
+        <span lang="en"><strong>Not just for games.</strong> Gampi works on everything your monitor shows: movies and streams with scenes that are too dark, a dull picture while working, or a look of its own for each program. Instead of a game, simply add any application – or switch by hotkey.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Einstellen mit direktem Feedback ===== -->
+  <section class="section section--alt" id="tuning" aria-labelledby="tuning-title">
+    <div class="container">
+      <h2 class="section__title" id="tuning-title"><span lang="de">Einstellen mit direktem Feedback</span><span lang="en">Tuning with instant feedback</span></h2>
+      <p class="section__lead">
+        <span lang="de">Die Live-Kurve zeigt, was mit dem Bild passiert – noch bevor du im Spiel bist.</span>
+        <span lang="en">The live curve shows what happens to the picture – before you're even in the game.</span>
+      </p>
+      <div class="split">
+        <ul class="checklist" role="list">
+          <li>
+            <strong><span lang="de">Die Kurve zeigt, ob es hilft</span><span lang="en">The curve shows whether it helps</span></strong>
+            <span lang="de">Wo sie steiler ist als die gestrichelte Linie, werden Details sichtbarer. Wo sie flacher ist, gehen welche verloren. Du siehst sofort, ob eine Einstellung wirklich mehr zeigt oder nur alles heller macht – und ob sich zwei Regler gegenseitig aufheben.</span>
+            <span lang="en">Where it's steeper than the dashed line, details become more visible. Where it's flatter, some are lost. You see at once whether a setting really shows more or just makes everything brighter – and whether two sliders cancel each other out.</span>
+          </li>
+          <li>
+            <strong><span lang="de">Live am Bildschirm</span><span lang="en">Live on screen</span></strong>
+            <span lang="de">Jede Reglerbewegung wirkt sofort. Doppelklick auf einen Regler setzt ihn zurück.</span>
+            <span lang="en">Every slider move takes effect immediately. Double-click a slider to reset it.</span>
+          </li>
+          <li>
+            <strong><span lang="de">Vorlagen als Startpunkt</span><span lang="en">Templates as a starting point</span></strong>
+            <span lang="de">Night Ops für dunkle Szenen, Clarity als verbesserter Standard, Vivid mit kräftigeren Farben – ein Klick, dann nach Geschmack verfeinern.</span>
+            <span lang="en">Night Ops for dark scenes, Clarity as an improved default, Vivid with stronger colors – one click, then refine to taste.</span>
+          </li>
+          <li>
+            <strong><span lang="de">Vorschlag aus dem Screenshot</span><span lang="en">Suggestion from a screenshot</span></strong>
+            <span lang="de">Gampi analysiert einen Screenshot deines Spiels und schlägt passende Werte für den Schatten-Boost vor.</span>
+            <span lang="en">Gampi analyzes a screenshot of your game and suggests matching shadow boost values.</span>
+          </li>
+        </ul>
+
+        <figure class="curve-figure">
+          <svg viewBox="0 0 420 270" role="img" aria-labelledby="curve-figure-title">
+            <title id="curve-figure-title">Tonwertkurve: in den Schatten steiler, danach unverändert / Tone curve: steeper in the shadows, unchanged above</title>
+            <rect x="40" y="30" width="340" height="200" rx="8" fill="#f9fafb" stroke="#e5e7eb"/>
+            <g stroke="#e5e7eb">
+              <path d="M125 30V230M210 30V230M295 30V230M40 80H380M40 130H380M40 180H380"/>
+            </g>
+            <path d="M40 230 380 30" stroke="#9ca3af" stroke-dasharray="5 5" fill="none"/>
+            <polygon fill="#2563eb" fill-opacity=".1" points="40,230 48.5,216.3 57,205.8 65.5,197.5 74,191.1 82.5,185.9 91,181.6 99.5,177.9 108,174.5 116.5,171.3 125,168.1 133.5,164.9 142,161.5 150.5,158 159,154.4 167.5,150.5 176,146.5 184.5,142.3 193,138 201.5,133.5 210,128.9 218.5,124.2 227,119.5 235.5,114.6 244,109.8 252.5,104.8 261,99.9 269.5,94.9 278,90 286.5,85 295,80 303.5,75 312,70 320.5,65 329,60 337.5,55 346,50 354.5,45 363,40 371.5,35 380,30 380,230"/>
+            <polyline fill="none" stroke="#2563eb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" points="40,230 48.5,216.3 57,205.8 65.5,197.5 74,191.1 82.5,185.9 91,181.6 99.5,177.9 108,174.5 116.5,171.3 125,168.1 133.5,164.9 142,161.5 150.5,158 159,154.4 167.5,150.5 176,146.5 184.5,142.3 193,138 201.5,133.5 210,128.9 218.5,124.2 227,119.5 235.5,114.6 244,109.8 252.5,104.8 261,99.9 269.5,94.9 278,90 286.5,85 295,80 303.5,75 312,70 320.5,65 329,60 337.5,55 346,50 354.5,45 363,40 371.5,35 380,30"/>
+            <circle cx="40" cy="230" r="5" fill="#facc15" stroke="#fff" stroke-width="2"/>
+
+            <!-- Markierungen -->
+            <path d="M84 112 66 190" stroke="#2563eb" stroke-width="1.5" fill="none"/>
+            <text x="56" y="104" class="curve-figure__note" lang="de">steiler = mehr Details</text>
+            <text x="56" y="104" class="curve-figure__note" lang="en">steeper = more detail</text>
+            <text x="368" y="150" text-anchor="end" class="curve-figure__muted" lang="de">Lichter unverändert</text>
+            <text x="368" y="150" text-anchor="end" class="curve-figure__muted" lang="en">highlights unchanged</text>
+
+            <text x="40" y="252" class="curve-figure__muted" lang="de">Schwarz</text>
+            <text x="40" y="252" class="curve-figure__muted" lang="en">Black</text>
+            <text x="380" y="252" text-anchor="end" class="curve-figure__muted" lang="de">Weiß</text>
+            <text x="380" y="252" text-anchor="end" class="curve-figure__muted" lang="en">White</text>
+          </svg>
+          <figcaption>
+            <span lang="de">Vorlage „Night Ops“: steil in den Schatten, darüber unverändert. Schwarz bleibt schwarz.</span>
+            <span lang="en">“Night Ops” template: steep in the shadows, unchanged above. Black stays black.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Vergleich ===== -->
+  <section class="section" id="compare" aria-labelledby="compare-title">
+    <div class="container">
+      <h2 class="section__title" id="compare-title"><span lang="de">Warum nicht einfach …?</span><span lang="en">Why not just …?</span></h2>
+      <p class="section__lead">
+        <span lang="de">Gampi im Vergleich zu den üblichen Wegen, ein dunkles Spiel heller zu bekommen.</span>
+        <span lang="en">Gampi compared to the usual ways of brightening a dark game.</span>
+      </p>
+      <div class="versus" role="region" aria-labelledby="compare-title" tabindex="0">
+        <table class="versus__table">
+          <thead>
+            <tr>
+              <td></td>
+              <th scope="col"><span lang="de">Helligkeits&shy;einstellung im Spiel</span><span lang="en">In-game brightness setting</span></th>
+              <th scope="col"><span lang="de">Treiber / Monitor</span><span lang="en">Driver / monitor</span></th>
+              <th scope="col"><span lang="de">Filter &amp; Overlays</span><span lang="en">Filters &amp; overlays</span></th>
+              <th scope="col" class="versus__gampi">Gampi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><span lang="de">Hebt nur die Schatten an, Schwarz bleibt schwarz</span><span lang="en">Lifts only the shadows, black stays black</span></th>
+              <td class="no">✗</td>
+              <td class="some"><span lang="de">teils</span><span lang="en">partly</span></td>
+              <td class="yes">✓</td>
+              <td class="yes versus__gampi">✓</td>
+            </tr>
+            <tr>
+              <th scope="row"><span lang="de">Eigene Einstellung pro Spiel, automatisch</span><span lang="en">Own setting per game, automatically</span></th>
+              <td class="yes">✓</td>
+              <td class="no">✗</td>
+              <td class="yes">✓</td>
+              <td class="yes versus__gampi">✓</td>
+            </tr>
+            <tr>
+              <th scope="row"><span lang="de">Desktop bleibt normal</span><span lang="en">Desktop stays normal</span></th>
+              <td class="yes">✓</td>
+              <td class="no">✗</td>
+              <td class="yes">✓</td>
+              <td class="yes versus__gampi">✓</td>
+            </tr>
+            <tr>
+              <th scope="row"><span lang="de">Wechsel per Hotkey mitten im Spiel</span><span lang="en">Switch by hotkey mid-game</span></th>
+              <td class="no">✗</td>
+              <td class="no">✗</td>
+              <td class="some"><span lang="de">teils</span><span lang="en">partly</span></td>
+              <td class="yes versus__gampi">✓</td>
+            </tr>
+            <tr>
+              <th scope="row"><span lang="de">Kein FPS-Verlust, keine zusätzliche Latenz</span><span lang="en">No FPS loss, no added latency</span></th>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="no">✗</td>
+              <td class="yes versus__gampi">✓</td>
+            </tr>
+            <tr>
+              <th scope="row"><span lang="de">Unabhängig vom Spiel nutzbar</span><span lang="en">Works regardless of the game</span></th>
+              <td class="some"><span lang="de">teils</span><span lang="en">partly</span></td>
+              <td class="yes">✓</td>
+              <td class="some"><span lang="de">teils</span><span lang="en">partly</span></td>
+              <td class="yes versus__gampi">✓</td>
+            </tr>
+            <tr>
+              <th scope="row"><span lang="de">Gamma auch mit AMD-Grafikkarte</span><span lang="en">Gamma with AMD graphics cards too</span></th>
+              <td class="yes">✓</td>
+              <td class="some"><span lang="de">teils</span><span lang="en">partly</span></td>
+              <td class="some"><span lang="de">teils</span><span lang="en">partly</span></td>
+              <td class="yes versus__gampi">✓</td>
+            </tr>
+            <tr>
+              <th scope="row"><span lang="de">Sättigung und ICC-Profil im selben Preset</span><span lang="en">Saturation and ICC profile in the same preset</span></th>
+              <td class="no">✗</td>
+              <td class="no">✗</td>
+              <td class="no">✗</td>
+              <td class="yes versus__gampi">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="versus__footnote">
+        <span lang="de">„teils“ = je nach Spiel, Treiber oder Monitor. Filter &amp; Overlays: z. B. Treiber-Filter oder ReShade.</span>
+        <span lang="en">“partly” = depends on game, driver or monitor. Filters &amp; overlays: e.g. driver filters or ReShade.</span>
+      </p>
+      <p class="section__cta">
+        <a class="btn btn--primary" href="#download"><span lang="de">Kostenlos herunterladen</span><span lang="en">Download for free</span></a>
+      </p>
     </div>
   </section>
 
@@ -214,10 +408,6 @@
           </ul>
         </article>
       </div>
-      <p class="note">
-        <span lang="de">Hinweis: Wir können nicht für jedes Anti-Cheat-System garantieren. Bei Turnieren und in Spielen mit eigenen Regeln zu Bildeinstellungen gelten deren Regeln.</span>
-        <span lang="en">Note: We can't give guarantees for every anti-cheat system. At tournaments and in games with their own rules on display settings, those rules apply.</span>
-      </p>
     </div>
   </section>
 
@@ -231,10 +421,9 @@
           <span lang="en">Free · Windows 10/11 (64-bit) · Version <span data-version></span></span>
         </p>
         <div class="download__actions">
-          <a class="btn btn--primary" data-download="setup" href="#download"><span lang="de">Installer herunterladen</span><span lang="en">Download installer</span></a>
-          <a class="btn btn--secondary" data-download="portable" href="#download"><span lang="de">Portable Version</span><span lang="en">Portable version</span></a>
+          <a class="btn btn--primary" href="https://github.com/Wussatier/gampi/releases" rel="noopener"><span lang="de">Zum Download auf GitHub</span><span lang="en">Go to download on GitHub</span></a>
         </div>
-        <small><span lang="de">Portable: eine einzelne Datei, ohne Installation – einfach starten.</span><span lang="en">Portable: a single file, no installation – just run it.</span></small>
+        <small><span lang="de">Dort findest du den Installer und die portable Version – eine einzelne Datei, ohne Installation, einfach starten.</span><span lang="en">There you'll find the installer and the portable version – a single file, no installation, just run it.</span></small>
       </div>
     </div>
   </section>
@@ -243,6 +432,14 @@
   <section class="section section--tight faq" id="faq" aria-labelledby="faq-title">
     <div class="container">
       <h2 class="section__title" id="faq-title">FAQ</h2>
+      <details>
+        <summary><span lang="de">Kostet Gampi FPS oder erhöht es die Latenz?</span><span lang="en">Does Gampi cost FPS or add latency?</span></summary>
+        <p><span lang="de">Nein. Die Grafikkarte wendet die Kurve beim Ausgeben des Bildes über eine eingebaute Tabelle an. Es läuft kein Overlay und kein Filter, der jedes Bild nachbearbeitet – FPS und Eingabeverzögerung bleiben unverändert.</span><span lang="en">No. The graphics card applies the curve through a built-in table when sending the picture to the display. No overlay and no filter processes every frame – FPS and input lag stay the same.</span></p>
+      </details>
+      <details>
+        <summary><span lang="de">Ist Gampi nur für Spiele gedacht?</span><span lang="en">Is Gampi only meant for games?</span></summary>
+        <p><span lang="de">Nein. Die Einstellungen gelten für das gesamte Bild des Monitors – also auch für Filme, Streams, den Browser oder jedes andere Programm. Presets lassen sich an eine beliebige Anwendung binden oder per Hotkey ein- und ausschalten.</span><span lang="en">No. The settings apply to the monitor's entire picture – including movies, streams, the browser or any other program. Presets can be tied to any application or switched on and off by hotkey.</span></p>
+      </details>
       <details>
         <summary><span lang="de">Ist Gampi wirklich kostenlos?</span><span lang="en">Is Gampi really free?</span></summary>
         <p><span lang="de">Ja. Kein Konto, keine Werbung in der App, keine Datensammlung.</span><span lang="en">Yes. No account, no ads in the app, no data collection.</span></p>

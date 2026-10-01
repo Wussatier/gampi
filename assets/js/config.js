@@ -1,19 +1,10 @@
 /* ==========================================================================
    Gampi – Website-Einstellungen
-   Bei einer neuen App-Version nur "version" anpassen. Die Download-Links
-   zeigen immer auf das neueste GitHub-Release; die Dateien im Release müssen
-   dafür genau so heißen wie unten (build-release.ps1 legt sie so an).
+   Bei einer neuen App-Version nur "version" anpassen. Der Download-Button
+   führt zur Release-Seite auf GitHub; die Adresse steht direkt in index.html.
    ========================================================================== */
 window.Gampi = window.Gampi || {};
 
 window.Gampi.config = {
-  version: "1.6.0",
-  github: {
-    user: "Wussatier",
-    repo: "gampi"
-  },
-  downloads: {
-    setup: "Gampi-Setup.exe",
-    portable: "Gampi-portable.exe"
-  }
+  version: "1.6.0"
 };
