@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gampi – Sieh mehr im Dunkeln. Gamma-Presets pro Spiel</title>
+  <meta name="description" content="Gampi: Gamma-, Kontrast-, Sättigungs- und Schatten-Presets pro Spiel – automatisch beim Spielstart. Kostenlos für Windows 10/11, AMD &amp; NVIDIA.">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="color-scheme" content="light">
+
+  <!-- Social-Media-Vorschau -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gampi">
+  <meta property="og:title" content="Gampi – See more in the dark. Automatically per game.">
+  <meta property="og:description" content="Per-game gamma, contrast, saturation and shadow boost presets for Windows. Free.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Strukturierte Daten für Suchmaschinen -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Gampi",
+    "alternateName": "Gamma Presets Instant",
+    "operatingSystem": "Windows 10, Windows 11",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Per-game gamma, contrast, saturation and shadow boost presets for Windows, switching automatically when a game starts.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "author": { "@type": "Person", "name": "Wussa" }
+  }
+  </script>
+
+  <!-- Skripte: defer = laden parallel, laufen nach dem HTML in dieser Reihenfolge -->
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/slides.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/gampi-filter.js" defer></script>
+  <script src="assets/js/compare-slider.js" defer></script>
+  <script src="assets/js/carousel.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-title-de="Gampi – Sieh mehr im Dunkeln. Gamma-Presets pro Spiel"
+      data-title-en="Gampi – See more in the dark. Gamma presets per game">
+
+<a class="skip-link" href="#main"><span lang="de">Zum Inhalt springen</span><span lang="en">Skip to content</span></a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="#top" aria-label="Gampi">
+      <img src="assets/img/icons/logo.png" alt="" width="32" height="32">Gampi
+    </a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="#features"><span lang="de">Funktionen</span><span lang="en">Features</span></a>
+      <a href="#how"><span lang="de">So geht's</span><span lang="en">How it works</span></a>
+      <a href="#safe"><span lang="de">Sicherheit</span><span lang="en">Safety</span></a>
+      <a href="#faq">FAQ</a>
+      <a href="#download">Download</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Sprache / Language">
+      <button type="button" data-set-lang="de" aria-pressed="true">DE</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <span class="pill"><span lang="de">Kostenlos · Windows 10/11 · AMD &amp; NVIDIA</span><span lang="en">Free · Windows 10/11 · AMD &amp; NVIDIA</span></span>
+      <h1 class="hero__title" id="hero-title">
+        <span lang="de">Sieh mehr im Dunkeln.<br><span class="accent">Automatisch pro Spiel.</span></span>
+        <span lang="en">See more in the dark.<br><span class="accent">Automatically per game.</span></span>
+      </h1>
+      <p class="hero__lead">
+        <span lang="de">Gampi hebt gezielt die dunkelsten Töne an – Schwarz bleibt schwarz, helle Bereiche bleiben unverändert. Presets pro Spiel, die sich beim Spielstart von selbst einschalten.</span>
+        <span lang="en">Gampi lifts exactly the darkest tones – black stays black, bright areas stay untouched. Presets per game that switch on by themselves when the game starts.</span>
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#download"><span lang="de">Kostenlos herunterladen</span><span lang="en">Download for free</span></a>
+        <a class="btn btn--secondary" href="#how"><span lang="de">So funktioniert's</span><span lang="en">How it works</span></a>
+      </div>
+
+      <!-- Vorher/Nachher-Karussell – Inhalte in assets/js/slides.js -->
+      <figure class="carousel" id="carousel" aria-roledescription="carousel" aria-label="Vorher/Nachher / Before/after">
+        <div class="compare" role="slider" tabindex="0"
+             aria-label="Vorher/Nachher-Regler / Before/after slider"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+          <svg class="compare__layer" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <image class="compare__before" width="1600" height="900" preserveAspectRatio="xMidYMid slice"/>
+          </svg>
+          <svg class="compare__layer compare__layer--after" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <image class="compare__after" width="1600" height="900" preserveAspectRatio="xMidYMid slice"/>
+          </svg>
+          <div class="compare__divider"></div>
+          <div class="compare__handle" aria-hidden="true">⟷</div>
+          <span class="compare__tag compare__tag--before"><span lang="de">Vorher</span><span lang="en">Before</span></span>
+          <span class="compare__tag compare__tag--after"><span lang="de">Mit Gampi</span><span lang="en">With Gampi</span></span>
+          <button type="button" class="carousel__nav carousel__nav--prev" hidden aria-label="Zurück / Previous">‹</button>
+          <button type="button" class="carousel__nav carousel__nav--next" hidden aria-label="Weiter / Next">›</button>
+        </div>
+        <div class="carousel__dots" hidden></div>
+        <figcaption class="carousel__caption" aria-live="polite"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Funktionen ===== -->
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="container">
+      <h2 class="section__title" id="features-title"><span lang="de">Alles, was du brauchst</span><span lang="en">Everything you need</span></h2>
+      <p class="section__lead">
+        <span lang="de">Ein moderner Ersatz für Gamma-Regler, die im Treiber fehlen oder bei jedem Spielstart neu gesetzt werden müssen.</span>
+        <span lang="en">A modern replacement for gamma sliders that are missing from your driver or need resetting every time you play.</span>
+      </p>
+      <div class="grid">
+        <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3><span lang="de">Automatisch pro Spiel</span><span lang="en">Automatic per game</span></h3>
+          <p><span lang="de">Startet das Spiel, wird dein Preset aktiv. Endet es, ist alles wieder normal.</span><span lang="en">Launch the game and your preset turns on. Quit it and everything goes back to normal.</span></p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c3-9 7-12 16-16"/><circle cx="4" cy="20" r="1.5" fill="currentColor"/></svg></div>
+          <h3><span lang="de">Schatten-Boost</span><span lang="en">Shadow boost</span></h3>
+          <p><span lang="de">Spreizt die dunkelsten Töne, damit sich Details vom dunklen Hintergrund abheben – ohne das Bild grau zu machen.</span><span lang="en">Spreads the darkest tones so details stand out from dark backgrounds – without turning the picture grey.</span></p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></div>
+          <h3><span lang="de">Gamma, Kontrast, Sättigung</span><span lang="en">Gamma, contrast, saturation</span></h3>
+          <p><span lang="de">Alles in einem Preset. Sättigung direkt über den AMD- oder NVIDIA-Treiber.</span><span lang="en">All in one preset. Saturation directly through the AMD or NVIDIA driver.</span></p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M7 14h10"/></svg></div>
+          <h3><span lang="de">Hotkeys &amp; Tray</span><span lang="en">Hotkeys &amp; tray</span></h3>
+          <p><span lang="de">Presets per Tastenkürzel mitten im Spiel wechseln oder über das Tray-Menü.</span><span lang="en">Switch presets mid-game with a hotkey or from the tray menu.</span></p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3><span lang="de">Bleibt, wie eingestellt</span><span lang="en">Stays as you set it</span></h3>
+          <p><span lang="de">Setzen Vollbild-Wechsel oder Alt+Tab die Einstellung zurück, stellt Gampi sie sofort wieder her.</span><span lang="en">If fullscreen switches or Alt+Tab reset your settings, Gampi restores them right away.</span></p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></div>
+          <h3><span lang="de">Für Creator</span><span lang="en">For creators</span></h3>
+          <p><span lang="de">Presets teilen, Vorher/Nachher-Bilder erzeugen und eine LUT für OBS &amp; Videoschnitt exportieren.</span><span lang="en">Share presets, create before/after images and export a LUT for OBS &amp; video editing.</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== So geht's ===== -->
+  <section class="section section--alt" id="how" aria-labelledby="how-title">
+    <div class="container">
+      <h2 class="section__title" id="how-title"><span lang="de">In drei Schritten</span><span lang="en">In three steps</span></h2>
+      <p class="section__lead"><span lang="de">Kein Konto, keine Einrichtung im Spiel.</span><span lang="en">No account, no in-game setup.</span></p>
+      <ol class="grid steps" role="list">
+        <li class="card card--muted">
+          <h3><span lang="de">Spiel anlegen</span><span lang="en">Add your game</span></h3>
+          <p><span lang="de">Namen eingeben und die EXE wählen – oder einfach aus den laufenden Programmen auswählen.</span><span lang="en">Enter a name and pick the EXE – or simply choose it from the running programs.</span></p>
+        </li>
+        <li class="card card--muted">
+          <h3><span lang="de">Preset einstellen</span><span lang="en">Tune a preset</span></h3>
+          <p><span lang="de">Mit Vorlage starten oder die Regler live verschieben – die Kurve zeigt genau, was passiert.</span><span lang="en">Start from a template or move the sliders live – the curve shows exactly what happens.</span></p>
+        </li>
+        <li class="card card--muted">
+          <h3><span lang="de">Spielen</span><span lang="en">Play</span></h3>
+          <p><span lang="de">Gampi schaltet beim Spielstart automatisch um und danach wieder zurück.</span><span lang="en">Gampi switches automatically when the game starts and back afterwards.</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Sicherheit ===== -->
+  <section class="section" id="safe" aria-labelledby="safe-title">
+    <div class="container">
+      <h2 class="section__title" id="safe-title"><span lang="de">Kein Eingriff ins Spiel</span><span lang="en">No tampering with the game</span></h2>
+      <p class="section__lead">
+        <span lang="de">Gampi arbeitet ausschließlich mit Windows- und Treiberfunktionen – so wie die Farbeinstellungen deiner Grafikkarte.</span>
+        <span lang="en">Gampi only uses Windows and driver functions – just like your graphics card's color settings.</span>
+      </p>
+      <div class="grid grid--wide">
+        <article class="card">
+          <h3><span lang="de">Was Gampi nutzt</span><span lang="en">What Gampi uses</span></h3>
+          <ul>
+            <li><span lang="de">Die Windows-Gamma-Kurve der Grafikausgabe</span><span lang="en">The Windows gamma curve of the display output</span></li>
+            <li><span lang="de">AMD- bzw. NVIDIA-Treiber für die Sättigung</span><span lang="en">The AMD or NVIDIA driver for saturation</span></li>
+            <li><span lang="de">Offizielle Windows-Hotkeys</span><span lang="en">Official Windows hotkeys</span></li>
+            <li><span lang="de">Nur die Namen laufender Programme für die Spielerkennung</span><span lang="en">Only the names of running programs for game detection</span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3><span lang="de">Was Gampi nicht tut</span><span lang="en">What Gampi doesn't do</span></h3>
+          <ul>
+            <li><span lang="de">Kein Code im Spielprozess, kein Einschleusen von DLLs</span><span lang="en">No code in the game process, no DLL injection</span></li>
+            <li><span lang="de">Kein Lesen oder Schreiben von Spielspeicher</span><span lang="en">No reading or writing game memory</span></li>
+            <li><span lang="de">Kein Overlay über dem Spiel</span><span lang="en">No overlay on top of the game</span></li>
+            <li><span lang="de">Keine Tastatur- oder Maus-Hooks, keine Treiberinstallation</span><span lang="en">No keyboard or mouse hooks, no driver installation</span></li>
+          </ul>
+        </article>
+      </div>
+      <p class="note">
+        <span lang="de">Hinweis: Wir können nicht für jedes Anti-Cheat-System garantieren. Bei Turnieren und in Spielen mit eigenen Regeln zu Bildeinstellungen gelten deren Regeln.</span>
+        <span lang="en">Note: We can't give guarantees for every anti-cheat system. At tournaments and in games with their own rules on display settings, those rules apply.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Download ===== -->
+  <section class="section section--tight download" id="download" aria-labelledby="download-title">
+    <div class="container">
+      <div class="card">
+        <h2 class="section__title" id="download-title"><span lang="de">Gampi herunterladen</span><span lang="en">Download Gampi</span></h2>
+        <p class="download__meta">
+          <span lang="de">Kostenlos · Windows 10/11 (64 Bit) · Version <span data-version></span></span>
+          <span lang="en">Free · Windows 10/11 (64-bit) · Version <span data-version></span></span>
+        </p>
+        <div class="download__actions">
+          <a class="btn btn--primary" data-download="setup" href="#download"><span lang="de">Installer herunterladen</span><span lang="en">Download installer</span></a>
+          <a class="btn btn--secondary" data-download="portable" href="#download"><span lang="de">Portable Version</span><span lang="en">Portable version</span></a>
+        </div>
+        <small><span lang="de">Portable: eine einzelne Datei, ohne Installation – einfach starten.</span><span lang="en">Portable: a single file, no installation – just run it.</span></small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section section--tight faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 class="section__title" id="faq-title">FAQ</h2>
+      <details>
+        <summary><span lang="de">Ist Gampi wirklich kostenlos?</span><span lang="en">Is Gampi really free?</span></summary>
+        <p><span lang="de">Ja. Kein Konto, keine Werbung in der App, keine Datensammlung.</span><span lang="en">Yes. No account, no ads in the app, no data collection.</span></p>
+      </details>
+      <details>
+        <summary><span lang="de">Windows warnt beim Start („Der Computer wurde geschützt“)?</span><span lang="en">Windows shows a warning (“Windows protected your PC”)?</span></summary>
+        <p><span lang="de">Das zeigt Windows bei neuen Programmen, die noch wenig verbreitet sind. Über „Weitere Informationen“ → „Trotzdem ausführen“ startet Gampi.</span><span lang="en">Windows shows this for new programs that aren't widely used yet. Click “More info” → “Run anyway” to start Gampi.</span></p>
+      </details>
+      <details>
+        <summary><span lang="de">Warum sehe ich den Effekt nicht auf Screenshots?</span><span lang="en">Why can't I see the effect in screenshots?</span></summary>
+        <p><span lang="de">Die Grafikkarte wendet die Einstellung erst bei der Ausgabe an den Monitor an – Screenshots und Aufnahmen entstehen vorher. Für Bilder und Videos hat Gampi deshalb eine Vorher/Nachher-Funktion und exportiert eine LUT für OBS.</span><span lang="en">The graphics card applies the setting only when sending the picture to the monitor – screenshots and recordings are taken before that. That's why Gampi has a before/after feature for images and exports a LUT for OBS.</span></p>
+      </details>
+      <details>
+        <summary><span lang="de">Funktioniert das mit HDR?</span><span lang="en">Does it work with HDR?</span></summary>
+        <p><span lang="de">Unter HDR ignoriert Windows die Gamma-Kurve. Gampi weist darauf hin – die Sättigung funktioniert weiterhin. HDR lässt sich mit Win + Alt + B umschalten.</span><span lang="en">Windows ignores the gamma curve while HDR is on. Gampi tells you so – saturation still works. Toggle HDR with Win + Alt + B.</span></p>
+      </details>
+      <details>
+        <summary><span lang="de">Welche Grafikkarten werden unterstützt?</span><span lang="en">Which graphics cards are supported?</span></summary>
+        <p><span lang="de">Gamma, Kontrast und Schatten-Boost funktionieren mit jeder Grafikkarte. Die Sättigung nutzt den AMD- oder NVIDIA-Treiber.</span><span lang="en">Gamma, contrast and shadow boost work with any graphics card. Saturation uses the AMD or NVIDIA driver.</span></p>
+      </details>
+      <details>
+        <summary><span lang="de">Bleibt mein Bild verstellt, wenn ich Gampi beende?</span><span lang="en">Does my picture stay changed when I quit Gampi?</span></summary>
+        <p><span lang="de">Nein. Beim Beenden, Abmelden und beim nächsten Start setzt Gampi alles auf Standard zurück.</span><span lang="en">No. When you quit, sign out and on the next start, Gampi resets everything to default.</span></p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <span>© <span data-year></span> Gampi · Made by Wussa</span>
+    <span class="site-footer__spacer"></span>
+    <a href="datenschutz.html"><span lang="de">Datenschutz</span><span lang="en">Privacy</span></a>
+  </div>
+</footer>
+
+<!-- Container für die Gampi-Filter, die gampi-filter.js zur Laufzeit anlegt -->
+<svg id="gampi-filters" width="0" height="0" aria-hidden="true" focusable="false" class="visually-hidden"><defs></defs></svg>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <!-- Gampi Demo-Szene: Nachtszene mit zwei Personen im Schatten.
+       Wird im Karussell gezeigt, solange keine eigenen Screenshots eingetragen sind. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1017"/>
+      <stop offset="1" stop-color="#07080b"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.82" cy="0.14" r="0.35">
+      <stop offset="0" stop-color="#2b3140" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#0d1017" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0" r="1">
+      <stop offset="0" stop-color="#6b5327" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#6b5327" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c0d10"/>
+      <stop offset="1" stop-color="#050506"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#moon)"/>
+  <circle cx="1310" cy="120" r="34" fill="#c9ccd6"/>
+
+  <!-- ferne Silhouetten -->
+  <path d="M0 470 L90 440 L160 455 L260 400 L340 430 L420 390 L520 420 L600 380 L700 415 L800 395 L900 430 L1000 405 L1100 440 L1200 410 L1300 445 L1420 415 L1600 450 L1600 900 L0 900Z" fill="#0f1116"/>
+
+  <!-- Gebäude links -->
+  <rect x="60" y="250" width="330" height="520" fill="#101217"/>
+  <rect x="60" y="250" width="330" height="10" fill="#15181e"/>
+  <g fill="#171a20">
+    <rect x="100" y="300" width="50" height="70"/><rect x="190" y="300" width="50" height="70"/><rect x="280" y="300" width="50" height="70"/>
+    <rect x="100" y="420" width="50" height="70"/><rect x="280" y="420" width="50" height="70"/>
+  </g>
+  <rect x="190" y="420" width="50" height="70" fill="#8a6a2e"/>
+  <rect x="190" y="420" width="50" height="70" fill="#d8a64b" opacity=".35"/>
+
+  <!-- Gebäude rechts mit Tordurchfahrt -->
+  <rect x="1080" y="220" width="460" height="560" fill="#0f1116"/>
+  <g fill="#15171d">
+    <rect x="1120" y="270" width="60" height="80"/><rect x="1230" y="270" width="60" height="80"/><rect x="1340" y="270" width="60" height="80"/><rect x="1450" y="270" width="60" height="80"/>
+  </g>
+  <rect x="1230" y="270" width="60" height="80" fill="#9c7a35"/>
+  <rect x="1230" y="270" width="60" height="80" fill="#e0b25a" opacity=".3"/>
+  <path d="M1180 780 L1180 520 Q1300 440 1420 520 L1420 780 Z" fill="#08090b"/>
+  <!-- Person im Schatten der Durchfahrt: kaum heller als der Hintergrund -->
+  <g fill="#111216">
+    <circle cx="1296" cy="585" r="19"/>
+    <path d="M1272 606 Q1296 598 1320 606 L1328 690 L1316 690 L1314 760 L1301 760 L1298 700 L1293 700 L1290 760 L1277 760 L1276 690 L1264 690 Z"/>
+    <path d="M1318 628 L1368 616 L1370 624 L1322 640 Z"/>
+  </g>
+
+  <!-- Straße, Lampe, Kisten -->
+  <rect y="760" width="1600" height="140" fill="url(#ground)"/>
+  <rect x="700" y="330" width="8" height="440" fill="#14161b"/>
+  <rect x="690" y="322" width="60" height="10" fill="#1a1c22"/>
+  <ellipse cx="740" cy="330" rx="14" ry="6" fill="#f2d18c"/>
+  <path d="M640 335 L840 335 L980 780 L500 780 Z" fill="url(#lamp)"/>
+  <g fill="#131418">
+    <rect x="430" y="690" width="120" height="80"/><rect x="455" y="630" width="80" height="60"/>
+  </g>
+  <g stroke="#191b20" stroke-width="3">
+    <path d="M430 730 H550 M490 690 V770"/>
+  </g>
+  <!-- zweite Person hinter den Kisten (sehr dunkel) -->
+  <g fill="#0f1013">
+    <circle cx="400" cy="660" r="15"/>
+    <path d="M382 676 Q400 670 418 676 L422 740 L378 740 Z"/>
+  </g>
+</svg>

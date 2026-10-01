@@ -1,0 +1,15 @@
+# Header für Cloudflare Pages (GitHub Pages ignoriert diese Datei).
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+
+# Statische Dateien eine Woche im Browser zwischenspeichern. Nach Änderungen an
+# CSS/JS reicht Strg+F5; für Besucher greift die neue Version spätestens nach
+# einer Woche.
+/assets/*
+  Cache-Control: public, max-age=604800

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Gampi – Grundlagen
+   Design-Tokens, Reset, Typografie, Barrierefreiheit, Zweisprachigkeit.
+   ========================================================================== */
+
+:root {
+  /* Farben (identisch zur App) */
+  --color-bg: #f5f6f8;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-border-strong: #d1d5db;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-accent-soft: #eff6ff;
+  --color-hover: #f3f4f6;
+  --color-warn-bg: #fffbeb;
+  --color-warn-edge: #fde68a;
+  --color-warn-ink: #92400e;
+
+  /* Form & Abstände */
+  --radius-sm: 10px;
+  --radius: 14px;
+  --radius-pill: 999px;
+  --shadow-card: 0 10px 30px rgba(17, 24, 39, .06);
+  --content-width: 1120px;
+  --gutter: 16px;
+  --section-space: 64px;
+  --header-height: 64px;
+
+  /* Schrift: Systemschriften – keine externen Fonts (Datenschutz, Tempo) */
+  --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-height) + 16px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: 16px/1.6 var(--font);
+  text-rendering: optimizeLegibility;
+}
+
+img, svg { display: block; max-width: 100%; }
+h1, h2, h3 { line-height: 1.2; }
+
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button { font: inherit; }
+
+/* Sichtbarer Fokus nur bei Tastaturbedienung */
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
+  outline-offset: 2px;
+}
+
+/* Zweisprachigkeit: Texte stehen als <span lang="de"> / <span lang="en"> im
+   HTML, sichtbar ist nur die aktive Sprache (gesetzt von i18n.js). */
+html[data-lang="de"] [lang="en"],
+html[data-lang="en"] [lang="de"] { display: none !important; }
+
+/* Nur für Screenreader */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* "Zum Inhalt springen" – erscheint erst beim Tabben */
+.skip-link {
+  position: absolute; left: 16px; top: -48px; z-index: 100;
+  padding: 8px 14px; border-radius: var(--radius-sm);
+  background: var(--color-accent); color: #fff; font-weight: 600;
+}
+.skip-link:focus { top: 12px; text-decoration: none; }
+
+[hidden] { display: none !important; }
