@@ -23,6 +23,10 @@
 |---|---|
 | ![Before](assets/img/slides/tarkov-wald-nacht.jpg) | ![With Gampi](assets/img/slides/tarkov-wald-nacht-gampi.jpg) |
 
+> [!TIP]
+> **Not just for games.** The settings apply to everything your monitor shows –
+> movies, streams, the browser or any other program.
+
 [Deutsche Version weiter unten](#deutsch)
 
 ## What it does
@@ -52,10 +56,6 @@ by itself when the game starts.
 - **Before/after images and a LUT for OBS** – screenshots and recordings don't
   capture the effect, so Gampi creates comparison images and a `.cube` LUT.
 - **German and English** interface.
-
-> [!TIP]
-> **Not just for games.** The settings apply to everything your monitor shows –
-> movies, streams, the browser or any other program.
 
 ## Getting started
 
@@ -106,6 +106,10 @@ Kostenlos · Windows 10/11 (64 Bit) · AMD &amp; NVIDIA
 [Alle Versionen](https://github.com/Wussatier/gampi/releases) ·
 [Website](https://wussatier.github.io/gampi/)
 
+> [!TIP]
+> **Nicht nur für Spiele.** Die Einstellungen gelten für alles, was dein Monitor
+> zeigt – Filme, Streams, den Browser oder jedes andere Programm.
+
 ### Was Gampi macht
 
 Gampi hebt gezielt die dunkelsten Töne des Bildes an: Gegner im Schatten werden
@@ -137,10 +141,6 @@ Spielstart von selbst ein.
   den Effekt nicht ein, deshalb erzeugt Gampi Vergleichsbilder und eine
   `.cube`-LUT.
 - Oberfläche auf **Deutsch und Englisch**.
-
-> [!TIP]
-> **Nicht nur für Spiele.** Die Einstellungen gelten für alles, was dein Monitor
-> zeigt – Filme, Streams, den Browser oder jedes andere Programm.
 
 ### Loslegen
 
