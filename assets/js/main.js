@@ -8,6 +8,14 @@
 
   i18n.init();
 
+  // Social-Media-Links: nur anzeigen, wenn in config.js eine Adresse steht
+  document.querySelectorAll("[data-social]").forEach(link => {
+    const url = (config.socials || {})[link.dataset.social];
+    if (!url) return;
+    link.href = url;
+    link.hidden = false;
+  });
+
   document.querySelectorAll("[data-version]").forEach(el => { el.textContent = config.version; });
   document.querySelectorAll("[data-year]").forEach(el => { el.textContent = new Date().getFullYear(); });
 

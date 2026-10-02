@@ -70,10 +70,13 @@
 .hero__actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
 /* ---- Fußzeile ----------------------------------------------------------- */
+/* Bleibt beim Scrollen am unteren Fensterrand sichtbar (Gegenstück zur Kopfzeile) */
 .site-footer {
+  position: sticky; bottom: 0; z-index: 10;
   border-top: 1px solid var(--color-border);
-  background: var(--color-surface);
-  padding: 28px 0; font-size: 14px; color: var(--color-muted);
+  background: rgba(255, 255, 255, .9);
+  backdrop-filter: blur(10px);
+  padding: 12px 0; font-size: 14px; color: var(--color-muted);
 }
 .site-footer__inner { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
 .site-footer__spacer { flex: 1; }
@@ -96,4 +99,6 @@
   .site-nav { display: none; }
   .lang-switch { margin-left: auto; }
   .hero { padding-top: 48px; }
+  .site-footer { font-size: 13px; }
+  .site-footer__inner { gap: 10px; }
 }
