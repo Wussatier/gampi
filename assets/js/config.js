@@ -14,9 +14,9 @@ window.Gampi.config = {
   // des Dienstes. Durch die eigene Profiladresse ersetzen, z. B.
   // "https://www.instagram.com/deinname".
   socials: {
-    instagram: "https://www.instagram.com/",
-    tiktok: "https://www.tiktok.com/",
-    youtube: "https://www.youtube.com/",
+    instagram: "",
+    tiktok: "",
+    youtube: "",
     github: "https://github.com/Wussatier/gampi"
   }
 };
