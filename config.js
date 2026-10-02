@@ -9,8 +9,10 @@ window.Gampi = window.Gampi || {};
 window.Gampi.config = {
   version: "1.6.0",
 
-  // Links im Abschnitt "Kontakt". Vollständige Adresse eintragen, z. B.
-  // "https://www.instagram.com/deinname". Leere Einträge werden nicht angezeigt.
+  // Links im Abschnitt "Kontakt". Leere Einträge ("") werden nicht angezeigt.
+  // PLATZHALTER: Instagram, TikTok und YouTube führen bisher nur zur Startseite
+  // des Dienstes. Durch die eigene Profiladresse ersetzen, z. B.
+  // "https://www.instagram.com/deinname".
   socials: {
     instagram: "",
     tiktok: "",
