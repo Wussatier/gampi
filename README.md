@@ -5,7 +5,7 @@
 <h1 align="center">Gampi – Gamma Presets Instant</h1>
 
 <p align="center">
-  See more in the dark. Automatically per game.<br>
+  See more. Richer colors. Automatically per game.<br>
   Free · Windows 10/11 (64-bit) · AMD &amp; NVIDIA
 </p>
 
@@ -24,65 +24,76 @@
 | ![Before](assets/img/slides/tarkov-wald-nacht.jpg) | ![With Gampi](assets/img/slides/tarkov-wald-nacht-gampi.jpg) |
 
 > [!TIP]
-> **Not just for games.** The settings apply to everything your monitor shows –
-> movies, streams, the browser or any other program.
+> **Not just for games.** Gampi works on everything your monitor shows –
+> movies, streams, the browser or your work apps.
 
 [Deutsche Version weiter unten](#deutsch)
 
-## What it does
+## Why Gampi exists
 
-Gampi lifts exactly the darkest tones of your picture: enemies in the shadows
-become visible, colors richer, details clearer – without washing out the
-picture. You save the settings as presets per game, and Gampi switches them on
-by itself when the game starts.
+Sound familiar? A game is so dark you can barely make anything out – you
+simply don't see the enemy in the corner. Or it's so pale it looks flat, as if
+behind a grey veil. And the usual fixes don't make it any better:
 
-- **No FPS loss, no added latency** – the graphics card applies the setting at
+- **The sliders barely help.** Turn up the brightness in the game or on the
+  monitor and the whole picture gets lighter: black turns grey, bright spots
+  blow out. Sliders for contrast or color are often missing entirely.
+- **Scattered everywhere – and applies to everything.** Gamma in the driver,
+  contrast in the monitor menu, color profiles in Windows color management.
+  And every change applies to the whole PC – after every game you switch
+  everything back by hand.
+
+## What Gampi does
+
+Gampi tunes your monitor's gamma, contrast, brightness and colors for every
+game – all in one app. You spot enemies in the shadows without the picture
+turning grey, and pale games get their color back. Start the game and your
+preset switches on by itself – afterwards everything is back to normal.
+
+- **No FPS loss, no latency** – your graphics card applies the setting right at
   display output. No overlay, no filter processing every frame.
-- **Automatic per game** – launch the game and your preset turns on; quit it
-  and your desktop is back to normal.
+- **Automatic per game** – launch the game and your preset is active; quit it
+  and your desktop looks normal again.
 - **Switch by hotkey** – day, night, indoors: one key press mid-game.
-- **Shadow boost** – lifts only the dark tones. Black stays black.
+- **Shadow boost** – brightens only the darkest tones, the rest of the picture
+  stays as it is.
 - **Gamma for AMD, at last** – AMD Software has no gamma slider, Gampi does.
-- **Saturation** – through the AMD or NVIDIA driver, in the same preset.
-- **ICC profiles** – each preset can carry its own ICC color profile for
-  fine-tuning beyond gamma and contrast.
-- **Stays as you set it** – fullscreen switches, Alt+Tab or the monitor waking
-  up often reset the picture. Gampi notices and restores it.
+  Saturation goes through your AMD or NVIDIA driver, in the same preset.
+- **ICC profiles** – attach your own color profile to each preset for the final
+  polish.
+- **Stays as you set it** – if fullscreen switches or a monitor waking up reset
+  the picture, Gampi restores your preset right away.
 - **Neatly organized** – one folder per game with as many presets as you like.
-- **Share presets** – export as a file, import by drag &amp; drop.
-- **Tuning with instant feedback** – a live curve shows what happens to the
-  picture, templates (Night Ops, Clarity, Vivid) give you a starting point, and
-  Gampi can suggest values from a screenshot.
-- **Before/after images and a LUT for OBS** – screenshots and recordings don't
-  capture the effect, so Gampi creates comparison images and a `.cube` LUT.
+- **Instant feedback** – a live curve shows whether a setting really reveals
+  more; templates (Night Ops, Clarity, Vivid) and suggestions from a
+  screenshot give you a starting point.
+- **Share presets** – as a file, imported by drag &amp; drop. Before/after
+  images and a LUT for OBS make the effect visible in screenshots and videos.
 - **German and English** interface.
 
 ## Getting started
 
 1. Download the installer or the portable version (a single file, no
    installation) and start Gampi.
-2. Add your game: enter a name and pick its EXE, or choose it from the running
+2. Add your game: enter a name and pick the EXE, or choose it from the running
    programs.
-3. Tune a preset: start from a template or move the sliders – changes show
-   live on screen.
-4. Play. Gampi switches when the game starts and back afterwards.
+3. Tune a preset: start from a template or move the sliders until you like it.
+4. Play – Gampi handles the rest.
 
 Windows may show “Windows protected your PC” on first start, because Gampi is
 new and not widely used yet. Click “More info” → “Run anyway”.
 
 ## Good to know
 
-- Gampi only uses Windows and graphics driver functions – the same kind of
-  setting as the color options of your graphics card. It runs no code inside
-  games, reads no game memory and draws no overlay.
+- Gampi only uses functions of Windows and your graphics driver. It runs no
+  code inside games, reads no game memory and draws no overlay.
 - Settings apply to the primary display.
-- Gamma, contrast and shadow boost work with any graphics card. Saturation
-  needs an AMD or NVIDIA driver.
+- Saturation needs an AMD or NVIDIA card; everything else works with any
+  graphics card.
 - While HDR is on, Windows ignores the gamma curve; saturation still works.
-  Gampi tells you when that is the case.
 - When you quit Gampi, sign out or start it again, everything is reset to
   default.
-- Gampi runs locally. No account, no ads, no data collection.
+- No account, no ads, no data collection – Gampi runs entirely locally.
 
 ## License
 
@@ -98,7 +109,7 @@ their respective owners. Gampi is not affiliated with them.
 
 <h2 id="deutsch">Deutsch</h2>
 
-Sieh mehr im Dunkeln. Automatisch pro Spiel.
+Mehr sehen. Kräftigere Farben. Automatisch pro Spiel.
 Kostenlos · Windows 10/11 (64 Bit) · AMD &amp; NVIDIA
 
 [Installer herunterladen](https://github.com/Wussatier/gampi/releases/latest/download/Gampi-Setup.exe) ·
@@ -107,50 +118,65 @@ Kostenlos · Windows 10/11 (64 Bit) · AMD &amp; NVIDIA
 [Website](https://wussatier.github.io/gampi/)
 
 > [!TIP]
-> **Nicht nur für Spiele.** Die Einstellungen gelten für alles, was dein Monitor
-> zeigt – Filme, Streams, den Browser oder jedes andere Programm.
+> **Nicht nur für Spiele.** Gampi wirkt auf alles, was dein Monitor zeigt –
+> Filme, Streams, den Browser oder deine Arbeitsprogramme.
+
+### Warum es Gampi gibt
+
+Kennst du das? Ein Spiel ist so dunkel, dass du kaum etwas erkennst – den
+Gegner in der Ecke siehst du einfach nicht. Oder es ist so blass, dass es flau
+aussieht, wie hinter einem Grauschleier. Und die üblichen Lösungen machen es
+nicht besser:
+
+- **Die Regler helfen kaum.** Drehst du im Spiel oder am Monitor die
+  Helligkeit hoch, wird das ganze Bild heller: Schwarz wird grau, helle Stellen
+  brennen aus. Regler für Kontrast oder Farbe fehlen oft ganz.
+- **Überall verstreut – und gilt für alles.** Gamma im Treiber, Kontrast im
+  Monitor-Menü, Farbprofile in der Windows-Farbverwaltung. Und jede Änderung
+  gilt für den ganzen PC – nach jedem Spiel stellst du alles von Hand zurück.
 
 ### Was Gampi macht
 
-Gampi hebt gezielt die dunkelsten Töne des Bildes an: Gegner im Schatten werden
-sichtbar, Farben kräftiger, Details klarer – ohne dass das Bild grau wird. Die
-Einstellungen speicherst du als Presets pro Spiel, und Gampi schaltet sie beim
-Spielstart von selbst ein.
+Gampi stellt Gamma, Kontrast, Helligkeit und Farben deines Monitors für jedes
+Spiel passend ein – alles in einer Anwendung. Du erkennst Gegner im Schatten,
+ohne dass das Bild grau wird, und blasse Spiele bekommen wieder Farbe. Startest
+du das Spiel, schaltet sich dein Preset von selbst ein – danach ist alles
+wieder normal.
 
-- **Kein FPS-Verlust, keine zusätzliche Latenz** – die Grafikkarte wendet die
-  Einstellung bei der Bildausgabe an. Kein Overlay, kein Filter, der jedes Bild
+- **Kein FPS-Verlust, keine Latenz** – deine Grafikkarte wendet die Einstellung
+  direkt bei der Bildausgabe an. Kein Overlay, kein Filter, der jedes Bild
   nachbearbeitet.
-- **Automatisch pro Spiel** – startet das Spiel, wird dein Preset aktiv; endet
-  es, ist der Desktop wieder normal.
+- **Automatisch pro Spiel** – startest du das Spiel, ist dein Preset aktiv;
+  beendest du es, sieht dein Desktop wieder normal aus.
 - **Wechsel per Hotkey** – Tag, Nacht, Innenraum: ein Tastendruck mitten im
   Spiel.
-- **Schatten-Boost** – hebt nur die dunklen Töne an. Schwarz bleibt schwarz.
-- **Endlich Gamma für AMD** – AMD Software hat keinen Gamma-Regler, Gampi schon.
-- **Sättigung** – über den AMD- oder NVIDIA-Treiber, im selben Preset.
-- **ICC-Profile** – jedes Preset kann ein eigenes ICC-Farbprofil mitbringen,
-  für den Feinschliff über Gamma und Kontrast hinaus.
-- **Bleibt, wie eingestellt** – Vollbild-Wechsel, Alt+Tab oder das Aufwachen
-  des Monitors setzen das Bild oft zurück. Gampi merkt das und stellt es wieder
-  her.
+- **Schatten-Boost** – hellt nur die dunkelsten Töne auf, der Rest des Bildes
+  bleibt, wie er ist.
+- **Endlich Gamma für AMD** – AMD Software hat keinen Gamma-Regler, Gampi
+  schon. Die Sättigung regelt Gampi über deinen AMD- oder NVIDIA-Treiber, im
+  selben Preset.
+- **ICC-Profile** – hinterlege pro Preset ein eigenes Farbprofil für den
+  letzten Feinschliff.
+- **Bleibt, wie eingestellt** – setzen Vollbild-Wechsel oder ein aufwachender
+  Monitor das Bild zurück, stellt Gampi dein Preset sofort wieder her.
 - **Übersichtlich sortiert** – pro Spiel ein Ordner mit beliebig vielen Presets.
-- **Presets teilen** – als Datei exportieren, per Drag &amp; Drop importieren.
-- **Einstellen mit direktem Feedback** – eine Live-Kurve zeigt, was mit dem
-  Bild passiert, Vorlagen (Night Ops, Clarity, Vivid) dienen als Startpunkt,
-  und Gampi schlägt auf Wunsch Werte aus einem Screenshot vor.
-- **Vorher/Nachher-Bilder und LUT für OBS** – Screenshots und Aufnahmen fangen
-  den Effekt nicht ein, deshalb erzeugt Gampi Vergleichsbilder und eine
-  `.cube`-LUT.
+- **Direktes Feedback** – eine Live-Kurve zeigt, ob eine Einstellung wirklich
+  mehr zeigt; Vorlagen (Night Ops, Clarity, Vivid) und Vorschläge aus einem
+  Screenshot geben dir einen Startpunkt.
+- **Presets teilen** – als Datei, importiert per Drag &amp; Drop.
+  Vorher/Nachher-Bilder und eine LUT für OBS machen den Effekt auch in
+  Screenshots und Videos sichtbar.
 - Oberfläche auf **Deutsch und Englisch**.
 
 ### Loslegen
 
 1. Installer oder portable Version (eine einzelne Datei, ohne Installation)
    herunterladen und Gampi starten.
-2. Spiel anlegen: Namen eingeben und die EXE wählen, oder aus den laufenden
-   Programmen auswählen.
-3. Preset einstellen: mit einer Vorlage starten oder die Regler verschieben –
-   Änderungen wirken sofort am Bildschirm.
-4. Spielen. Gampi schaltet beim Spielstart um und danach wieder zurück.
+2. Spiel anlegen: Namen eingeben und die EXE wählen – oder das Spiel aus den
+   laufenden Programmen auswählen.
+3. Preset einstellen: mit einer Vorlage starten oder die Regler verschieben,
+   bis es dir gefällt.
+4. Spielen – den Rest erledigt Gampi.
 
 Windows zeigt beim ersten Start eventuell „Der Computer wurde durch Windows
 geschützt“, weil Gampi neu und noch wenig verbreitet ist. Über „Weitere
@@ -158,17 +184,17 @@ Informationen“ → „Trotzdem ausführen“ startet es.
 
 ### Gut zu wissen
 
-- Gampi nutzt ausschließlich Windows- und Grafiktreiberfunktionen – dieselbe
-  Art von Einstellung wie die Farboptionen deiner Grafikkarte. Es läuft kein
-  Code im Spiel, es wird kein Spielspeicher gelesen und kein Overlay gezeichnet.
+- Gampi nutzt nur Funktionen von Windows und deinem Grafiktreiber. Es läuft
+  kein Code im Spiel, es wird kein Spielspeicher gelesen und kein Overlay
+  gezeichnet.
 - Die Einstellungen wirken auf den Hauptbildschirm.
-- Gamma, Kontrast und Schatten-Boost funktionieren mit jeder Grafikkarte. Die
-  Sättigung braucht einen AMD- oder NVIDIA-Treiber.
+- Für die Sättigung brauchst du eine AMD- oder NVIDIA-Karte; alles andere
+  funktioniert mit jeder Grafikkarte.
 - Unter HDR ignoriert Windows die Gamma-Kurve; die Sättigung funktioniert
-  weiterhin. Gampi weist darauf hin.
-- Beim Beenden, Abmelden und beim nächsten Start setzt Gampi alles auf
+  weiterhin.
+- Beim Beenden, beim Abmelden und beim nächsten Start setzt Gampi alles auf
   Standard zurück.
-- Gampi läuft lokal. Kein Konto, keine Werbung, keine Datensammlung.
+- Kein Konto, keine Werbung, keine Datensammlung – Gampi läuft komplett lokal.
 
 ### Lizenz
 

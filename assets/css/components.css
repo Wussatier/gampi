@@ -50,6 +50,17 @@
   display: grid; place-items: center;
 }
 .card__icon svg { width: 22px; height: 22px; }
+.card__icon--problem { background: var(--color-warn-bg); color: var(--color-warn-ink); }
+
+/* Lösungskarte am Ende des Problem-Abschnitts */
+.card--solution { background: var(--color-accent-soft); border: 2px solid var(--color-accent); }
+.card--solution .card__icon { background: var(--color-accent); color: #fff; }
+.card--solution ul { list-style: none; padding-left: 0; color: var(--color-text); }
+.card--solution li { position: relative; padding-left: 24px; margin: 6px 0; }
+.card--solution li::before {
+  content: "✓"; position: absolute; left: 0; top: 0;
+  color: var(--color-accent); font-weight: 700;
+}
 
 /* Nummerierte Schritte */
 .steps { counter-reset: step; list-style: none; margin: 0; padding: 0; }
