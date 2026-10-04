@@ -1,7 +1,7 @@
 /* ==========================================================================
    Gampi – Bausteine
-   Buttons, Karten, Sprachumschalter, Vorher/Nachher-Vergleich, Karussell,
-   FAQ, Hinweise.
+   Buttons, Karten, Sprachumschalter, Hinweis, Vorher/Nachher-Karussell,
+   Download, Kontakt, FAQ.
    ========================================================================== */
 
 /* ---- Buttons ------------------------------------------------------------ */
@@ -50,20 +50,52 @@
   display: grid; place-items: center;
 }
 .card__icon svg { width: 22px; height: 22px; }
-.card__icon--problem { background: var(--color-warn-bg); color: var(--color-warn-ink); }
-
-/* Lösungskarte am Ende des Problem-Abschnitts */
-.card--solution { background: var(--color-accent-soft); border: 2px solid var(--color-accent); }
-.card--solution .card__icon { background: var(--color-accent); color: #fff; }
-.card--solution ul { list-style: none; padding-left: 0; color: var(--color-text); }
-.card--solution li { position: relative; padding-left: 24px; margin: 6px 0; }
-.card--solution li::before {
-  content: "✓"; position: absolute; left: 0; top: 0;
-  color: var(--color-accent); font-weight: 700;
+/* ---- Problem → Lösung (Abschnitt "Warum Gampi?") ------------------------ */
+.fixes { display: grid; gap: 16px; }
+.fix {
+  display: grid; align-items: stretch;
+  grid-template-columns: minmax(0, 1fr) 44px minmax(0, 1fr);
+}
+.fix__problem, .fix__solution { border-radius: var(--radius); padding: 20px 24px; border: 1px solid; }
+.fix__problem { background: var(--color-warn-bg); border-color: var(--color-warn-edge); }
+.fix__solution { background: var(--color-accent-soft); border-color: var(--color-accent); }
+.fix__arrow {
+  display: grid; place-items: center;
+  color: var(--color-accent); font-size: 26px; font-weight: 700;
+}
+.fix__label {
+  font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+}
+.fix__problem .fix__label { color: var(--color-warn-ink); }
+.fix__solution .fix__label { color: var(--color-accent); }
+.fix h3 { margin: 4px 0 6px; font-size: 17px; }
+.fix p { margin: 0; color: var(--color-muted); font-size: 15px; }
+@media (max-width: 720px) {
+  .fix { grid-template-columns: 1fr; }
+  .fix__arrow { height: 36px; transform: rotate(90deg); }
 }
 
+/* ---- Vergleichstabelle --------------------------------------------------- */
+.section__subtitle { text-align: center; font-size: 22px; margin: 48px 0 16px; }
+.versus {
+  overflow-x: auto;
+  background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius);
+}
+.versus__table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 15px; }
+.versus__table th, .versus__table td { padding: 12px 14px; text-align: center; border-bottom: 1px solid var(--color-border); }
+.versus__table tbody tr:last-child th, .versus__table tbody tr:last-child td { border-bottom: 0; }
+.versus__table thead th { font-size: 14px; color: var(--color-muted); font-weight: 600; vertical-align: bottom; }
+.versus__table tbody th { text-align: left; font-weight: 500; color: var(--color-text); }
+.versus__table td { font-weight: 700; }
+.versus__table .yes { color: #15803d; }
+.versus__table .no { color: #b91c1c; }
+.versus__table .some { color: var(--color-muted); font-weight: 500; font-size: 14px; }
+.versus__table .versus__gampi { background: var(--color-accent-soft); }
+.versus__table thead .versus__gampi { color: var(--color-accent); font-size: 16px; }
+.versus__footnote { font-size: 13px; color: var(--color-muted); text-align: center; margin: 12px 0 0; }
+
 /* Nummerierte Schritte */
-.steps { counter-reset: step; list-style: none; margin: 0; padding: 0; }
+.steps { counter-reset: step; list-style: none; margin: 40px 0 0; padding: 0; }
 .steps .card { position: relative; padding-top: 28px; }
 .steps .card::before {
   counter-increment: step; content: counter(step);
@@ -77,8 +109,7 @@
 .callout {
   background: var(--color-accent-soft); border: 1px solid var(--color-border);
   border-left: 4px solid var(--color-accent); border-radius: 12px;
-  padding: 16px 20px; margin: 24px 0 0; font-size: 15px; color: var(--color-muted);
-  text-align: left;
+  padding: 14px 20px; margin: 20px 0 0; font-size: 15px; color: var(--color-muted);
 }
 .callout strong { color: var(--color-text); }
 
@@ -160,65 +191,3 @@
 }
 .faq summary { cursor: pointer; font-weight: 600; }
 .faq details p { color: var(--color-muted); margin: 10px 0 0; font-size: 15px; }
-
-/* ---- Kernaussagen in Zahlen (unter dem Hero) ----------------------------- */
-.stats {
-  list-style: none; margin: 28px 0 0; padding: 0;
-  display: grid; gap: 12px;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-}
-.stats__item {
-  background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius); padding: 18px 12px;
-}
-.stats__value { display: block; font-size: 30px; line-height: 1.1; color: var(--color-accent); }
-.stats__label { display: block; margin-top: 4px; font-size: 14px; color: var(--color-muted); }
-
-/* ---- Zweispaltiger Abschnitt: Text links, Grafik rechts ------------------ */
-.split {
-  display: grid; gap: 32px; align-items: center;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-}
-@media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
-
-.checklist { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
-.checklist li {
-  position: relative; padding-left: 34px;
-  color: var(--color-muted); font-size: 15px;
-}
-.checklist li::before {
-  content: "✓"; position: absolute; left: 0; top: 1px;
-  width: 22px; height: 22px; border-radius: 50%;
-  background: var(--color-accent-soft); color: var(--color-accent);
-  font-size: 13px; font-weight: 700; display: grid; place-items: center;
-}
-.checklist strong { display: block; color: var(--color-text); font-size: 16px; margin-bottom: 2px; }
-
-.curve-figure {
-  margin: 0; padding: 16px;
-  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius);
-}
-.curve-figure svg { width: 100%; height: auto; font-family: var(--font); }
-.curve-figure__note { font-size: 13px; font-weight: 600; fill: var(--color-accent); }
-.curve-figure__muted { font-size: 12px; fill: var(--color-muted); }
-.curve-figure figcaption { font-size: 14px; color: var(--color-muted); text-align: center; margin-top: 4px; }
-
-/* ---- Vergleichstabelle --------------------------------------------------- */
-.versus {
-  overflow-x: auto;
-  background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius);
-}
-.versus__table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 15px; }
-.versus__table th, .versus__table td { padding: 14px 16px; text-align: center; border-bottom: 1px solid var(--color-border); }
-.versus__table tbody tr:last-child th, .versus__table tbody tr:last-child td { border-bottom: 0; }
-.versus__table thead th { font-size: 14px; color: var(--color-muted); font-weight: 600; vertical-align: bottom; }
-.versus__table tbody th { text-align: left; font-weight: 500; color: var(--color-text); }
-.versus__table td { font-weight: 700; }
-.versus__table .yes { color: #15803d; }
-.versus__table .no { color: #b91c1c; }
-.versus__table .some { color: var(--color-muted); font-weight: 500; font-size: 14px; }
-.versus__table .versus__gampi { background: var(--color-accent-soft); }
-.versus__table thead .versus__gampi { color: var(--color-accent); font-size: 16px; }
-.versus__footnote { font-size: 13px; color: var(--color-muted); text-align: center; margin: 12px 0 0; }
-
-.section__cta { text-align: center; margin: 28px 0 0; }
