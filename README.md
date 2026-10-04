@@ -32,12 +32,12 @@
 ## Why Gampi exists
 
 Sound familiar? A game is so dark you can barely make anything out – you
-simply don't see the enemy in the corner. Or it's so pale it looks flat, as if
-behind a grey veil. And the usual fixes don't make it any better:
+simply don't see the enemy in the corner. Or it's so pale that colors look
+dull and flat. And the usual fixes don't make it any better:
 
 - **The sliders barely help.** Turn up the brightness in the game or on the
-  monitor and the whole picture gets lighter: black turns grey, bright spots
-  blow out. Sliders for contrast or color are often missing entirely.
+  monitor and the whole picture gets lighter and looks pale and washed out.
+  Sliders for contrast or color are often missing entirely.
 - **Scattered everywhere – and applies to everything.** Gamma in the driver,
   contrast in the monitor menu, color profiles in Windows color management.
   And every change applies to the whole PC – after every game you switch
@@ -46,8 +46,9 @@ behind a grey veil. And the usual fixes don't make it any better:
 ## What Gampi does
 
 Gampi tunes your monitor's gamma, contrast, brightness and colors for every
-game – all in one app. You spot enemies in the shadows without the picture
-turning grey, and pale games get their color back. Start the game and your
+game – all in one app. Unlike a normal brightness slider, Gampi brightens only
+the dark spots, so you spot enemies in the shadows while the rest of the
+picture stays as it is. Pale games get their color back. Start the game and your
 preset switches on by itself – afterwards everything is back to normal.
 
 - **No FPS loss, no latency** – your graphics card applies the setting right at
@@ -124,13 +125,12 @@ Kostenlos · Windows 10/11 (64 Bit) · AMD &amp; NVIDIA
 ### Warum es Gampi gibt
 
 Kennst du das? Ein Spiel ist so dunkel, dass du kaum etwas erkennst – den
-Gegner in der Ecke siehst du einfach nicht. Oder es ist so blass, dass es flau
-aussieht, wie hinter einem Grauschleier. Und die üblichen Lösungen machen es
-nicht besser:
+Gegner in der Ecke siehst du einfach nicht. Oder es ist so blass, dass die
+Farben matt und flau wirken. Und die üblichen Lösungen machen es nicht besser:
 
 - **Die Regler helfen kaum.** Drehst du im Spiel oder am Monitor die
-  Helligkeit hoch, wird das ganze Bild heller: Schwarz wird grau, helle Stellen
-  brennen aus. Regler für Kontrast oder Farbe fehlen oft ganz.
+  Helligkeit hoch, wird das ganze Bild heller und wirkt blass und milchig.
+  Regler für Kontrast oder Farbe fehlen oft ganz.
 - **Überall verstreut – und gilt für alles.** Gamma im Treiber, Kontrast im
   Monitor-Menü, Farbprofile in der Windows-Farbverwaltung. Und jede Änderung
   gilt für den ganzen PC – nach jedem Spiel stellst du alles von Hand zurück.
@@ -138,8 +138,10 @@ nicht besser:
 ### Was Gampi macht
 
 Gampi stellt Gamma, Kontrast, Helligkeit und Farben deines Monitors für jedes
-Spiel passend ein – alles in einer Anwendung. Du erkennst Gegner im Schatten,
-ohne dass das Bild grau wird, und blasse Spiele bekommen wieder Farbe. Startest
+Spiel passend ein – alles in einer Anwendung. Anders als der normale
+Helligkeitsregler hellt Gampi nur die dunklen Stellen auf: Du erkennst Gegner
+im Schatten, der Rest des Bildes bleibt, wie er ist. Blasse Spiele bekommen
+wieder Farbe. Startest
 du das Spiel, schaltet sich dein Preset von selbst ein – danach ist alles
 wieder normal.
 
