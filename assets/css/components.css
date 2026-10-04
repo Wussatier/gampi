@@ -94,15 +94,35 @@
 .versus__table thead .versus__gampi { color: var(--color-accent); font-size: 16px; }
 .versus__footnote { font-size: 13px; color: var(--color-muted); text-align: center; margin: 12px 0 0; }
 
-/* Nummerierte Schritte */
-.steps { counter-reset: step; list-style: none; margin: 40px 0 0; padding: 0; }
-.steps .card { position: relative; padding-top: 28px; }
-.steps .card::before {
-  counter-increment: step; content: counter(step);
-  position: absolute; top: -16px; left: 24px;
-  width: 32px; height: 32px; border-radius: 50%;
-  background: var(--color-accent); color: #fff; font-weight: 700;
-  display: grid; place-items: center;
+/* ---- Schritte mit App-Screenshots ("So funktioniert's") ----------------- */
+.showcase {
+  display: grid; gap: 28px; align-items: start;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+}
+.showcase__tabs { display: grid; gap: 10px; }
+.showcase__tab {
+  display: flex; gap: 14px; align-items: flex-start; text-align: left;
+  padding: 16px 18px; border-radius: var(--radius);
+  border: 1px solid var(--color-border); background: var(--color-bg);
+  font: inherit; color: var(--color-muted); font-size: 15px; cursor: pointer;
+}
+.showcase__tab:hover { border-color: var(--color-border-strong); }
+.showcase__tab[aria-selected="true"] { background: var(--color-accent-soft); border-color: var(--color-accent); }
+.showcase__tab:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+.showcase__num {
+  flex: none; width: 30px; height: 30px; border-radius: 50%;
+  display: grid; place-items: center; font-weight: 700;
+  background: var(--color-border); color: var(--color-text);
+}
+.showcase__tab[aria-selected="true"] .showcase__num { background: var(--color-accent); color: #fff; }
+.showcase__text strong { display: block; color: var(--color-text); font-size: 16px; margin-bottom: 2px; }
+.showcase__done { margin: 6px 4px 0; font-weight: 600; color: var(--color-text); }
+.showcase__panel img {
+  display: block; width: 100%; height: auto;
+  border-radius: var(--radius-sm); box-shadow: var(--shadow-card);
+}
+@media (max-width: 860px) {
+  .showcase { grid-template-columns: 1fr; }
 }
 
 /* ---- Hinweis ------------------------------------------------------------ */
