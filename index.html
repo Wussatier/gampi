@@ -51,6 +51,7 @@
   <script src="assets/js/gampi-filter.js" defer></script>
   <script src="assets/js/compare-slider.js" defer></script>
   <script src="assets/js/carousel.js" defer></script>
+  <script src="assets/js/showcase.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 <body data-title-de="Gampi – Mehr sehen, kräftigere Farben. Automatisch pro Spiel"
@@ -293,9 +294,9 @@
           <p><span lang="de">Ein eigenes Farbprofil pro Preset für den letzten Feinschliff.</span><span lang="en">Your own color profile per preset for the final polish.</span></p>
         </article>
         <article class="card">
-          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 20 4"/><path d="M4 20h16V4"/></svg></div>
-          <h3><span lang="de">Live-Kurve und Vorlagen</span><span lang="en">Live curve and templates</span></h3>
-          <p><span lang="de">Du siehst sofort, ob eine Einstellung hilft. Start mit Night Ops, Clarity oder Vivid.</span><span lang="en">See at once whether a setting helps. Start with Night Ops, Clarity or Vivid.</span></p>
+          <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="m17 10 5-3v10l-5-3"/></svg></div>
+          <h3><span lang="de">Für Bilder und Videos</span><span lang="en">For images and videos</span></h3>
+          <p><span lang="de">Screenshots zeigen den Effekt nicht – Vorher/Nachher-Bilder und eine LUT für OBS schon.</span><span lang="en">Screenshots don't show the effect – before/after images and a LUT for OBS do.</span></p>
         </article>
         <article class="card">
           <div class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
@@ -316,24 +317,52 @@
     </div>
   </section>
 
-  <!-- ===== So geht's ===== -->
+  <!-- ===== So geht's: drei Schritte mit Screenshots der App (Bilder in assets/img/app/) ===== -->
   <section class="section section--alt" id="how" aria-labelledby="how-title">
     <div class="container">
-      <h2 class="section__title" id="how-title"><span lang="de">In drei Schritten</span><span lang="en">In three steps</span></h2>
-      <ol class="grid steps" role="list">
-        <li class="card card--muted">
-          <h3><span lang="de">Spiel anlegen</span><span lang="en">Add your game</span></h3>
-          <p><span lang="de">EXE wählen oder aus den laufenden Programmen auswählen.</span><span lang="en">Pick the EXE or choose it from the running programs.</span></p>
-        </li>
-        <li class="card card--muted">
-          <h3><span lang="de">Preset einstellen</span><span lang="en">Tune a preset</span></h3>
-          <p><span lang="de">Vorlage wählen oder Regler verschieben.</span><span lang="en">Pick a template or move the sliders.</span></p>
-        </li>
-        <li class="card card--muted">
-          <h3><span lang="de">Spielen</span><span lang="en">Play</span></h3>
-          <p><span lang="de">Den Rest erledigt Gampi.</span><span lang="en">Gampi handles the rest.</span></p>
-        </li>
-      </ol>
+      <h2 class="section__title" id="how-title"><span lang="de">So funktioniert's</span><span lang="en">How it works</span></h2>
+      <p class="section__lead">
+        <span lang="de">In drei Schritten eingerichtet – danach schaltet Gampi von selbst um.</span>
+        <span lang="en">Set up in three steps – after that, Gampi switches by itself.</span>
+      </p>
+      <div class="showcase" data-showcase>
+        <div class="showcase__tabs" role="tablist" aria-label="Schritte / Steps">
+          <button type="button" class="showcase__tab" role="tab" id="step-tab-1" aria-controls="step-panel-1" aria-selected="true">
+            <span class="showcase__num">1</span>
+            <span class="showcase__text">
+              <strong><span lang="de">Spiel anlegen</span><span lang="en">Add your game</span></strong>
+              <span lang="de">EXE wählen und festlegen, welches Preset beim Start aktiv wird.</span><span lang="en">Pick the EXE and choose which preset turns on at launch.</span>
+            </span>
+          </button>
+          <button type="button" class="showcase__tab" role="tab" id="step-tab-2" aria-controls="step-panel-2" aria-selected="false" tabindex="-1">
+            <span class="showcase__num">2</span>
+            <span class="showcase__text">
+              <strong><span lang="de">Vorlage wählen</span><span lang="en">Pick a template</span></strong>
+              <span lang="de">Night Ops, Clarity oder Vivid – die Live-Kurve zeigt, was mit dem Bild passiert.</span><span lang="en">Night Ops, Clarity or Vivid – the live curve shows what happens to the picture.</span>
+            </span>
+          </button>
+          <button type="button" class="showcase__tab" role="tab" id="step-tab-3" aria-controls="step-panel-3" aria-selected="false" tabindex="-1">
+            <span class="showcase__num">3</span>
+            <span class="showcase__text">
+              <strong><span lang="de">Feinjustieren</span><span lang="en">Fine-tune</span></strong>
+              <span lang="de">Schatten-Boost und Sättigung nach Geschmack – jede Änderung wirkt sofort.</span><span lang="en">Shadow boost and saturation to taste – every change takes effect instantly.</span>
+            </span>
+          </button>
+          <p class="showcase__done"><span lang="de">Dann einfach spielen – den Rest erledigt Gampi.</span><span lang="en">Then just play – Gampi handles the rest.</span></p>
+        </div>
+        <div class="showcase__panel" role="tabpanel" id="step-panel-1" aria-labelledby="step-tab-1">
+          <img lang="de" src="assets/img/app/spiel-de.jpg" width="1466" height="1230" loading="lazy" alt="Gampi: Spiel mit EXE und automatisch aktivem Preset">
+          <img lang="en" src="assets/img/app/spiel-en.jpg" width="1466" height="1230" loading="lazy" alt="Gampi: game with EXE and automatically activated preset">
+        </div>
+        <div class="showcase__panel" role="tabpanel" id="step-panel-2" aria-labelledby="step-tab-2" hidden>
+          <img lang="de" src="assets/img/app/preset-de.jpg" width="1466" height="1230" loading="lazy" alt="Gampi: Preset mit Vorlage und Live-Kurve">
+          <img lang="en" src="assets/img/app/preset-en.jpg" width="1466" height="1230" loading="lazy" alt="Gampi: preset with template and live curve">
+        </div>
+        <div class="showcase__panel" role="tabpanel" id="step-panel-3" aria-labelledby="step-tab-3" hidden>
+          <img lang="de" src="assets/img/app/regler-de.jpg" width="1466" height="1230" loading="lazy" alt="Gampi: Regler für Schatten-Boost und Sättigung">
+          <img lang="en" src="assets/img/app/regler-en.jpg" width="1466" height="1230" loading="lazy" alt="Gampi: sliders for shadow boost and saturation">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -374,7 +403,7 @@
       </details>
       <details>
         <summary><span lang="de">Warum sehe ich den Effekt nicht auf Screenshots?</span><span lang="en">Why can't I see the effect in screenshots?</span></summary>
-        <p><span lang="de">Die Grafikkarte wendet ihn erst bei der Ausgabe an den Monitor an. Für Bilder und Videos erstellt Gampi Vorher/Nachher-Bilder und eine LUT für OBS.</span><span lang="en">The GPU applies it only when sending the picture to the monitor. For images and videos, Gampi creates before/after images and a LUT for OBS.</span></p>
+        <p><span lang="de">Die Grafikkarte wendet ihn erst bei der Ausgabe an den Monitor an – Screenshots entstehen vorher.</span><span lang="en">The GPU applies it only when sending the picture to the monitor – screenshots are taken before that.</span></p>
       </details>
       <details>
         <summary><span lang="de">Funktioniert das mit HDR?</span><span lang="en">Does it work with HDR?</span></summary>
