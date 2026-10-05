@@ -385,38 +385,129 @@
     </div>
   </section>
 
-  <!-- ===== FAQ ===== -->
+  <!-- ===== FAQ: Fragen von jemandem, der Gampi zum ersten Mal sieht ===== -->
   <section class="section section--tight faq" id="faq" aria-labelledby="faq-title">
     <div class="container">
       <h2 class="section__title" id="faq-title">FAQ</h2>
-      <details>
-        <summary><span lang="de">Ist Gampi kostenlos?</span><span lang="en">Is Gampi free?</span></summary>
-        <p><span lang="de">Ja. Kein Konto, keine Werbung, keine Datensammlung.</span><span lang="en">Yes. No account, no ads, no data collection.</span></p>
-      </details>
-      <details>
-        <summary><span lang="de">Greift Gampi ins Spiel ein?</span><span lang="en">Does Gampi touch the game?</span></summary>
-        <p><span lang="de">Nein. Gampi nutzt nur Windows- und Treiberfunktionen: kein Code im Spiel, kein Zugriff auf Spielspeicher, kein Overlay.</span><span lang="en">No. Gampi only uses Windows and driver functions: no code in the game, no access to game memory, no overlay.</span></p>
-      </details>
-      <details>
-        <summary><span lang="de">Welche Grafikkarten werden unterstützt?</span><span lang="en">Which graphics cards are supported?</span></summary>
-        <p><span lang="de">Alle. Nur die Sättigung braucht eine AMD- oder NVIDIA-Karte.</span><span lang="en">All of them. Only saturation needs an AMD or NVIDIA card.</span></p>
-      </details>
-      <details>
-        <summary><span lang="de">Warum sehe ich den Effekt nicht auf Screenshots?</span><span lang="en">Why can't I see the effect in screenshots?</span></summary>
-        <p><span lang="de">Die Grafikkarte wendet ihn erst bei der Ausgabe an den Monitor an – Screenshots entstehen vorher.</span><span lang="en">The GPU applies it only when sending the picture to the monitor – screenshots are taken before that.</span></p>
-      </details>
-      <details>
-        <summary><span lang="de">Funktioniert das mit HDR?</span><span lang="en">Does it work with HDR?</span></summary>
-        <p><span lang="de">Teilweise: Unter HDR ignoriert Windows die Gamma-Kurve, die Sättigung funktioniert weiterhin.</span><span lang="en">Partly: with HDR on, Windows ignores the gamma curve; saturation still works.</span></p>
-      </details>
-      <details>
-        <summary><span lang="de">Windows warnt beim Start?</span><span lang="en">Windows shows a warning?</span></summary>
-        <p><span lang="de">Normal bei neuen Programmen: „Weitere Informationen“ → „Trotzdem ausführen“.</span><span lang="en">Normal for new programs: “More info” → “Run anyway”.</span></p>
-      </details>
-      <details>
-        <summary><span lang="de">Bleibt mein Bild verstellt, wenn ich Gampi beende?</span><span lang="en">Does my picture stay changed when I quit Gampi?</span></summary>
-        <p><span lang="de">Nein. Beim Beenden setzt Gampi alles auf Standard zurück.</span><span lang="en">No. When you quit, Gampi resets everything to default.</span></p>
-      </details>
+      <p class="section__lead">
+        <span lang="de">Alles, was du vor dem ersten Start wissen willst.</span>
+        <span lang="en">Everything you want to know before the first start.</span>
+      </p>
+      <div class="faq__groups">
+
+        <div class="faq__group">
+          <h3 class="faq__heading"><span lang="de">Grundlagen</span><span lang="en">The basics</span></h3>
+          <details>
+            <summary><span lang="de">Was macht Gampi genau?</span><span lang="en">What exactly does Gampi do?</span></summary>
+            <p><span lang="de">Gampi ist ein kleines Windows-Programm, das das Bild deines Monitors anpasst: Gamma, Helligkeit, Kontrast und Sättigung. Die Einstellungen speicherst du als Preset pro Spiel, und Gampi schaltet sie beim Spielstart automatisch ein und danach wieder aus.</span><span lang="en">Gampi is a small Windows program that adjusts your monitor's picture: gamma, brightness, contrast and saturation. You save the settings as a preset per game, and Gampi switches them on automatically when the game starts and off again afterwards.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Was ist der Unterschied zwischen Gamma und Helligkeit?</span><span lang="en">What's the difference between gamma and brightness?</span></summary>
+            <p><span lang="de">Helligkeit macht alle Bereiche gleich viel heller – das Bild wirkt dadurch schnell blass. Gamma hellt vor allem die dunklen und mittleren Töne auf, helle Bereiche bleiben fast gleich. Der Schatten-Boost von Gampi geht noch weiter und hebt nur die dunkelsten Stellen an.</span><span lang="en">Brightness makes all areas equally lighter – which quickly makes the picture look pale. Gamma mainly lifts the dark and middle tones, while bright areas stay almost the same. Gampi's shadow boost goes further and lifts only the darkest spots.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Was ist ein Preset?</span><span lang="en">What is a preset?</span></summary>
+            <p><span lang="de">Eine gespeicherte Kombination aus allen Einstellungen, zum Beispiel „Nacht“ oder „Labs“. Pro Spiel kannst du beliebig viele anlegen und per Hotkey oder Klick wechseln.</span><span lang="en">A saved combination of all settings, for example “Night” or “Labs”. You can create as many per game as you like and switch by hotkey or click.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Was ist ein ICC-Profil – brauche ich das?</span><span lang="en">What is an ICC profile – do I need one?</span></summary>
+            <p><span lang="de">Ein ICC-Profil ist eine Datei, die beschreibt, wie dein Monitor Farben darstellt – oft vom Hersteller oder aus einer Kalibrierung. Das ist optional: Die meisten kommen ohne aus. Wer eins hat, kann es einem Preset zuordnen.</span><span lang="en">An ICC profile is a file that describes how your monitor displays colors – often from the manufacturer or a calibration. It's optional: most people don't need one. If you have one, you can assign it to a preset.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Ist Gampi nur für Spiele?</span><span lang="en">Is Gampi only for games?</span></summary>
+            <p><span lang="de">Nein. Die Einstellungen wirken auf alles, was dein Monitor zeigt. Du kannst statt eines Spiels jedes Programm anlegen, etwa einen Videoplayer oder den Browser.</span><span lang="en">No. The settings apply to everything your monitor shows. Instead of a game, you can add any program, such as a video player or the browser.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Was kostet Gampi?</span><span lang="en">What does Gampi cost?</span></summary>
+            <p><span lang="de">Nichts. Kein Abo, kein Konto, keine Werbung.</span><span lang="en">Nothing. No subscription, no account, no ads.</span></p>
+          </details>
+        </div>
+
+        <div class="faq__group">
+          <h3 class="faq__heading"><span lang="de">Sicherheit und Datenschutz</span><span lang="en">Safety and privacy</span></h3>
+          <details>
+            <summary><span lang="de">Greift Gampi ins Spiel ein?</span><span lang="en">Does Gampi touch the game?</span></summary>
+            <p><span lang="de">Nein. Gampi ändert nur die Bildausgabe deiner Grafikkarte – so wie die Farbeinstellungen im Treiber oder am Monitor. Es läuft kein Code im Spiel, Gampi liest keinen Spielspeicher und zeichnet kein Overlay.</span><span lang="en">No. Gampi only changes your graphics card's display output – like the color settings in the driver or on the monitor. No code runs in the game, Gampi reads no game memory and draws no overlay.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Windows warnt beim ersten Start – ist das gefährlich?</span><span lang="en">Windows shows a warning on first start – is that dangerous?</span></summary>
+            <p><span lang="de">Windows zeigt diese Warnung bei neuen Programmen, die noch wenig verbreitet sind. Über „Weitere Informationen“ → „Trotzdem ausführen“ startet Gampi. Lade Gampi nur über diese Seite oder GitHub herunter.</span><span lang="en">Windows shows this warning for new programs that aren't widely used yet. Click “More info” → “Run anyway” to start Gampi. Only download Gampi from this site or GitHub.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Sammelt Gampi Daten?</span><span lang="en">Does Gampi collect data?</span></summary>
+            <p><span lang="de">Nein. Gampi baut keine Internetverbindung auf. Deine Presets liegen nur auf deinem PC.</span><span lang="en">No. Gampi doesn't connect to the internet. Your presets stay on your PC.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Bleibt mein Bild verstellt, wenn ich Gampi beende?</span><span lang="en">Does my picture stay changed when I quit Gampi?</span></summary>
+            <p><span lang="de">Nein. Beim Beenden, beim Abmelden und beim nächsten Start setzt Gampi alles auf Standard zurück. Sollte doch einmal etwas hängen bleiben: Gampi einfach neu starten.</span><span lang="en">No. When you quit, sign out and on the next start, Gampi resets everything to default. If something ever does stick: simply restart Gampi.</span></p>
+          </details>
+        </div>
+
+        <div class="faq__group">
+          <h3 class="faq__heading"><span lang="de">Einrichtung und Nutzung</span><span lang="en">Setup and use</span></h3>
+          <details>
+            <summary><span lang="de">Installer oder portable Version – was soll ich nehmen?</span><span lang="en">Installer or portable version – which should I pick?</span></summary>
+            <p><span lang="de">Der Installer legt einen Startmenü-Eintrag an, bietet Autostart an und lässt sich über die Windows-Einstellungen deinstallieren. Die portable Version ist eine einzelne Datei ohne Installation – praktisch zum Ausprobieren. Beide können dasselbe.</span><span lang="en">The installer adds a Start menu entry, offers autostart and can be uninstalled via Windows settings. The portable version is a single file without installation – handy for trying it out. Both do the same.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Brauche ich Administratorrechte?</span><span lang="en">Do I need administrator rights?</span></summary>
+            <p><span lang="de">Nein. Nur in zwei Sonderfällen kann Windows einmal nachfragen: wenn du das Windows-Gamma-Limit aufhebst und wenn du zum ersten Mal ein ICC-Profil hinterlegst.</span><span lang="en">No. Windows may ask once in two special cases: when you remove the Windows gamma limit and when you assign an ICC profile for the first time.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Muss Gampi die ganze Zeit laufen?</span><span lang="en">Does Gampi have to run all the time?</span></summary>
+            <p><span lang="de">Für das automatische Umschalten ja. Gampi läuft dann unauffällig im Infobereich der Taskleiste und braucht kaum Leistung. Mit Autostart startet es direkt beim Anmelden.</span><span lang="en">For automatic switching, yes. Gampi then runs quietly in the taskbar's notification area and uses hardly any resources. With autostart, it starts right when you sign in.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Woher weiß Gampi, welches Spiel läuft?</span><span lang="en">How does Gampi know which game is running?</span></summary>
+            <p><span lang="de">Du hinterlegst beim Spiel die EXE-Datei, zum Beispiel „EscapeFromTarkov.exe“ – oder wählst sie aus den laufenden Programmen aus. Gampi prüft alle zwei Sekunden nur die Namen der laufenden Programme.</span><span lang="en">You set the game's EXE file, for example “EscapeFromTarkov.exe” – or pick it from the running programs. Every two seconds, Gampi checks only the names of running programs.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Wie finde ich die richtigen Einstellungen?</span><span lang="en">How do I find the right settings?</span></summary>
+            <p><span lang="de">Am einfachsten mit einer Vorlage: Night Ops für dunkle Spiele, Clarity für ein klareres Bild, Vivid für mehr Farbe. Danach nach Geschmack nachregeln – jede Änderung wirkt sofort. Gampi kann auch einen Screenshot deines Spiels analysieren und Werte vorschlagen. Ein Doppelklick setzt einen Regler zurück.</span><span lang="en">The easiest way is a template: Night Ops for dark games, Clarity for a clearer picture, Vivid for more color. Then adjust to taste – every change takes effect instantly. Gampi can also analyze a screenshot of your game and suggest values. A double-click resets a slider.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Kann ich Presets mit Freunden teilen?</span><span lang="en">Can I share presets with friends?</span></summary>
+            <p><span lang="de">Ja. Exportiere ein Preset als Datei; deine Freunde ziehen sie einfach ins Gampi-Fenster. Hotkeys und ICC-Profile bleiben dabei persönlich und werden nicht mitgegeben.</span><span lang="en">Yes. Export a preset as a file; your friends simply drag it into the Gampi window. Hotkeys and ICC profiles stay personal and aren't included.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Wie deinstalliere ich Gampi?</span><span lang="en">How do I uninstall Gampi?</span></summary>
+            <p><span lang="de">Installer-Version: über Windows-Einstellungen → Apps. Portable Version: Datei löschen. Deine Presets liegen unter <code>%AppData%\Gampi</code> – den Ordner kannst du ebenfalls löschen.</span><span lang="en">Installer version: via Windows Settings → Apps. Portable version: delete the file. Your presets are stored in <code>%AppData%\Gampi</code> – you can delete that folder too.</span></p>
+          </details>
+        </div>
+
+        <div class="faq__group">
+          <h3 class="faq__heading"><span lang="de">Technik und Kompatibilität</span><span lang="en">Technical and compatibility</span></h3>
+          <details>
+            <summary><span lang="de">Kostet Gampi FPS oder erhöht es die Latenz?</span><span lang="en">Does Gampi cost FPS or add latency?</span></summary>
+            <p><span lang="de">Nein. Die Grafikkarte wendet die Einstellung über eine eingebaute Tabelle an, wenn sie das Bild an den Monitor schickt. Es gibt kein Overlay und keinen Filter, der jedes Bild nachbearbeitet.</span><span lang="en">No. The graphics card applies the setting through a built-in table when it sends the picture to the monitor. There's no overlay and no filter processing every frame.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Welche Grafikkarten und Windows-Versionen werden unterstützt?</span><span lang="en">Which graphics cards and Windows versions are supported?</span></summary>
+            <p><span lang="de">Windows 10 und 11 (64 Bit) mit jeder Grafikkarte. Nur die Sättigung braucht eine AMD- oder NVIDIA-Karte. Zusätzliche Software wie .NET musst du nicht installieren.</span><span lang="en">Windows 10 and 11 (64-bit) with any graphics card. Only saturation needs an AMD or NVIDIA card. You don't need to install extra software such as .NET.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Funktioniert das im Vollbild?</span><span lang="en">Does it work in fullscreen?</span></summary>
+            <p><span lang="de">Ja. Manche Spiele setzen das Bild beim Vollbild-Wechsel oder nach Alt+Tab zurück – Gampi merkt das und stellt dein Preset sofort wieder her.</span><span lang="en">Yes. Some games reset the picture when switching to fullscreen or after Alt+Tab – Gampi notices and restores your preset right away.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Ich habe mehrere Monitore – was passiert?</span><span lang="en">I have several monitors – what happens?</span></summary>
+            <p><span lang="de">Gampi wirkt auf den Hauptbildschirm. Welcher das ist, legst du in Windows unter Einstellungen → System → Anzeige fest. Die anderen Monitore bleiben unverändert.</span><span lang="en">Gampi works on the primary display. You choose which one that is in Windows under Settings → System → Display. The other monitors stay unchanged.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Funktioniert das mit HDR?</span><span lang="en">Does it work with HDR?</span></summary>
+            <p><span lang="de">Teilweise. Ist HDR an, ignoriert Windows die Gamma-Einstellungen; die Sättigung funktioniert weiterhin. Gampi weist dich darauf hin. HDR schaltest du mit Win + Alt + B ein und aus.</span><span lang="en">Partly. With HDR on, Windows ignores the gamma settings; saturation still works. Gampi lets you know. Toggle HDR with Win + Alt + B.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Warum sehe ich den Effekt nicht auf Screenshots?</span><span lang="en">Why can't I see the effect in screenshots?</span></summary>
+            <p><span lang="de">Die Grafikkarte wendet ihn erst bei der Ausgabe an den Monitor an – Screenshots und Aufnahmen entstehen vorher. Mit der Vorher/Nachher-Funktion und der LUT für OBS kannst du ihn trotzdem zeigen.</span><span lang="en">The graphics card applies it only when sending the picture to the monitor – screenshots and recordings are taken before that. With the before/after feature and the LUT for OBS you can still show it.</span></p>
+          </details>
+          <details>
+            <summary><span lang="de">Gampi meldet, dass Windows die Einstellung ablehnt?</span><span lang="en">Gampi says Windows rejected the setting?</span></summary>
+            <p><span lang="de">Windows blockiert sehr starke Anpassungen standardmäßig. Klicke in Gampi unten auf „Windows-Gamma-Limit aufheben“ und bestätige einmal mit Administratorrechten. Falls es danach noch nicht klappt, einmal ab- und wieder anmelden.</span><span lang="en">Windows blocks very strong adjustments by default. Click “Remove Windows gamma limit” at the bottom of Gampi and confirm once with administrator rights. If it still doesn't work, sign out and back in once.</span></p>
+          </details>
+        </div>
+
+      </div>
     </div>
   </section>
 
