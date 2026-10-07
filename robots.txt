@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://wussatier.github.io/gampi/sitemap.xml
