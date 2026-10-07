@@ -31,16 +31,28 @@ window.Gampi.slides = [
     after: "assets/img/slides/tarkov-wald-nacht-gampi.jpg"
   },
   {
-    name: { de: "Rocket League · Stadion", en: "Rocket League · Stadium" },
-    presetName: { de: "Eigenes Preset: mehr Farbe", en: "Custom preset: more color" },
-    before: "assets/img/slides/rocket-league-stadion.jpg",
-    after: "assets/img/slides/rocket-league-stadion-gampi.jpg"
-  },
-  {
     name: { de: "Escape from Tarkov · Woods Nachts im Regen", en: "Escape from Tarkov · Woods at night rain" },
     presetName: "Preset: Night Ops",
     before: "assets/img/slides/tarkov-wald-regen.jpg",
     after: "assets/img/slides/tarkov-wald-regen-gampi.jpg"
+  },
+  {
+    name: { de: "Aion 2 · Tageslicht", en: "Aion 2 · Daylight" },
+    presetName: "Preset: Standard",
+    before: "assets/img/slides/aion2-tag.jpg",
+    after: "assets/img/slides/aion2-tag-gampi.jpg"
+  },
+  {
+    name: { de: "Aion 2 · Dunkle Höhle", en: "Aion 2 · Dark cave" },
+    presetName: "Preset: Standard",
+    before: "assets/img/slides/aion2-dunkel.jpg",
+    after: "assets/img/slides/aion2-dunkel-gampi.jpg"
+  },
+  {
+    name: { de: "Rocket League · Stadion", en: "Rocket League · Stadium" },
+    presetName: { de: "Eigenes Preset: mehr Farbe", en: "Custom preset: more color" },
+    before: "assets/img/slides/rocket-league-stadion.jpg",
+    after: "assets/img/slides/rocket-league-stadion-gampi.jpg"
   },
   {
     name: { de: "Rocket League · Sand-Arena", en: "Rocket League · Sand arena" },
