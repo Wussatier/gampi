@@ -59,6 +59,12 @@ window.Gampi.slides = [
     presetName: { de: "Eigenes Preset: mehr Farbe", en: "Custom preset: more color" },
     before: "assets/img/slides/rocket-league-sand.jpg",
     after: "assets/img/slides/rocket-league-sand-gampi.jpg"
+  },
+  {
+    name: { de: "Cyberpunk 2077 · Night City", en: "Cyberpunk 2077 · Night City" },
+    presetName: { de: "Eigenes Preset: mehr Farbe und Kontrast", en: "Custom preset: more color and contrast" },
+    before: "assets/img/slides/cyberpunk.jpg",
+    after: "assets/img/slides/cyberpunk-gampi.jpg"
   }
   // Beispiel ohne Gampi-Bild (Effekt wird im Browser berechnet):
   // {
