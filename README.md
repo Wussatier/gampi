@@ -94,7 +94,8 @@ new and not widely used yet. Click “More info” → “Run anyway”.
 - While HDR is on, Windows ignores the gamma curve; saturation still works.
 - When you quit Gampi, sign out or start it again, everything is reset to
   default.
-- No account, no ads, no data collection – Gampi runs entirely locally.
+- No account, no ads, no data collection – Gampi runs locally. Its only internet
+  connection is the update check on GitHub, which you can turn off.
 
 ## License
 
@@ -196,7 +197,8 @@ Informationen“ → „Trotzdem ausführen“ startet es.
   weiterhin.
 - Beim Beenden, beim Abmelden und beim nächsten Start setzt Gampi alles auf
   Standard zurück.
-- Kein Konto, keine Werbung, keine Datensammlung – Gampi läuft komplett lokal.
+- Kein Konto, keine Werbung, keine Datensammlung – Gampi läuft lokal. Die
+  einzige Internetverbindung ist die abschaltbare Update-Suche bei GitHub.
 
 ### Lizenz
 

@@ -7,7 +7,7 @@
 window.Gampi = window.Gampi || {};
 
 window.Gampi.config = {
-  version: "1.1.0",
+  version: "1.2.0",
 
   // Links im Abschnitt "Kontakt". Leere Einträge ("") werden nicht angezeigt.
   // PLATZHALTER: Instagram, TikTok und YouTube führen bisher nur zur Startseite
