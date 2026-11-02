@@ -198,6 +198,13 @@
 .download__actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 20px 0 12px; }
 .download small { color: var(--color-muted); display: block; }
 
+/* Spende im Download-Bereich: abgesetzt, aber dezenter als die Downloads */
+.donate { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--color-border); }
+.donate .donate__text { margin: 0 0 14px; color: var(--color-text); }
+.donate small { margin-top: 8px; }
+.btn--donate { background: #fff1f2; color: #be123c; border-color: #fecdd3; }
+.btn--donate:hover { background: #ffe4e6; }
+
 /* ---- Kontakt ------------------------------------------------------------ */
 .contact { text-align: center; }
 .contact .section__lead { margin-bottom: 24px; }
